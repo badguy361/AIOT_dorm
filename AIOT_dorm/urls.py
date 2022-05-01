@@ -18,7 +18,7 @@ from django.urls import path,include
 from dorm.views import post,put
 urlpatterns = [ 
     path('postdorm/', post),
-    path('putdorm/', put),
+    # path('putdorm/', put),
     path('dorm/',include('dorm.urls')),
     path('admin/', admin.site.urls),
 ]

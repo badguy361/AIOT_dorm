@@ -20,12 +20,12 @@ def post(request):
         except:
             return JsonResponse({"status":1})
 
-def put(request):
-    if request.method == "PUT":
-        facilities_name = request.PUT["facilities_name"]
-        facilities_info = request.PUT["facilities_info"]
-        facilities.objects.filter(id=1).update(facilities_name=facilities_name, facilities_info=facilities_info)
-        return JsonResponse({"status":0})
+# def put(request):
+#     if request.method == "PUT":
+#         facilities_name = request.PUT["facilities_name"]
+#         facilities_info = request.PUT["facilities_info"]
+#         facilities.objects.filter(id=1).update(facilities_name=facilities_name, facilities_info=facilities_info)
+#         return JsonResponse({"status":0})
 
 # def get(request,id):
 def get(request):
