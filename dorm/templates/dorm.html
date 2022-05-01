@@ -5,10 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-    <div>use info:</div>
-    <div>{{Date}}</div>
-    <div>{{facilities_list}}</div>
-    <div>{{facilities_info}}</div>
-    <div>{{facilities_voltage}}</div>
+    <h1>Use info:</h1>
+    <table class="table" border='2'>
+        <thead>
+            <tr>
+                <th>日期</th>
+                <th>使用設施</th>
+                <th>使用狀況</th>
+                <th>設施電壓</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in context%}
+                <tr>
+                    <td>{{ data.Date }}</td>
+                    <td>{{ data.facilities_name }}</td>
+                    <td>{{ data.facilities_info }}</td>
+                    <td>{{ data.facilities_voltage }}</td>
+                </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+    <!-- <div>{{tmp}}</div> -->
+    {% comment %} <h1>Date : {{Date}}</h1>
+    <h1>Facilities : {{facilities_list}}</h1>
+    <h1>Use status : {{facilities_info}}</h1>
+    <h1>Facilities voltage : {{facilities_voltage}}</h1> {% endcomment %}
 </body>
 </html>
