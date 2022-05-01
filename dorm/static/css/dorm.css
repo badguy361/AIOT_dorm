@@ -1,0 +1,48 @@
+table {
+    border: 0;
+    border-collapse: collapse;
+    border-radius: 8px;
+    width: 100%;
+}
+th {
+    border: solid 1px #5ceffe;
+    padding: 16px 8px;
+}
+td {
+    border: solid 1px #5ceffe;
+    text-align: center;
+    padding: 8px;
+    color: #757575;
+}
+table td a{
+    background-color: #25b327;
+    color: white;
+    padding:5px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.date {
+    background-color: #0ceffe;
+}
+.facilities name {
+    background-color: #039be5;
+    border: 1px solid #039be5;
+    color: white;
+}
+.facilities info {
+    border: 1px solid #2e3a4d;
+    background-color: #2e3a4d;
+    color: white;
+}
+.facilities voltage {
+    border: 1px solid #2e3a4d;
+    background-color: #2e3a4d;
+    color: white;
+}
+.main {
+    width: 80%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
