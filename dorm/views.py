@@ -31,12 +31,18 @@ def post(request):
 def get(request):
     name=[]
     info=[]
+    voltage=[]
+    Date=[]
     for i in range(1,3): #3 is tricky
-        facilities_list= facilities.objects.get(id=1)
+        facilities_list= facilities.objects.get(id=i)
+        Date.append(facilities_list.Date)
         name.append(facilities_list.facilities_name)
         info.append(facilities_list.facilities_info)
+        voltage.append(facilities_list.facilities_voltage)
     context = {
+        'Date':Date,
         'facilities_list': name,
-        'facilities_info': info
+        'facilities_info': info,
+        'facilities_voltage':voltage
     }
-    return render(request,"hello.html",context)
+    return render(request,"dorm.html",context)
