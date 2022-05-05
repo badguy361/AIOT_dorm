@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from dorm.views import post
+from dorm.views import post,FacilitiesView
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -23,5 +23,6 @@ urlpatterns = [
     path('postdorm/', post),
     # path('putdorm/', put),
     path('dorm/',include('dorm.urls')),
+    path('dorm_class/',FacilitiesView.as_view()),
     path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
