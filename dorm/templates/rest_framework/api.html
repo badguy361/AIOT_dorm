@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/dorm.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% load static %}
+    <table>
+        <thead>
+            <tr>
+                <th class="date">日期時間</th>
+                <th class="facilities name">使用設施</th>
+                <th class="facilities info">使用狀況</th>
+                <th class="facilities voltage">備註(設施電壓)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in context%}
+                <tr>
+                    <td class='date'>{{ data.Date }}</td>
+                    <td class='facilities name'>{{ data.facilities_name }}</td>
+                    <td class='facilities info'>{{ data.facilities_info }}</td>
+                    <td class='facilities voltage'>{{ data.facilities_voltage }}</td>
+                </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+    {% comment %} <h1>Use info:</h1> {% endcomment %}
+    <!-- <div>{{tmp}}</div> -->
+    {% comment %} <h1>Date : {{Date}}</h1>
+    <h1>Facilities : {{facilities_list}}</h1>
+    <h1>Use status : {{facilities_info}}</h1>
+    <h1>Facilities voltage : {{facilities_voltage}}</h1> {% endcomment %}
+</body>
+</html>

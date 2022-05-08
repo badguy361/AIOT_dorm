@@ -6,7 +6,8 @@ class FacilitiesSerializer(serializers.ModelSerializer):
  
     class Meta:
         model = facilities
-        fields = ('id',
-                  'facilities_name',
-                  'facilities_info'
-                  )
+        fields = '__all__'
+        # fields = ('id',
+        #           'facilities_name',
+        #           'facilities_info'
+        #           )

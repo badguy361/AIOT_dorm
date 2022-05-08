@@ -2,29 +2,40 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from dorm import models
 from dorm.models import facilities
-from django.views.decorators.csrf import csrf_exempt
 from dorm.serializers import FacilitiesSerializer
+from rest_framework import viewsets
+from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import ListView
 from django.views import View
 from django.http import HttpResponseRedirect
+    
 
 # Create your views here.
-class FacilitiesView(View):
-    initial = facilities.objects.all()
+class FacilitiesViewSet(viewsets.ModelViewSet):
+    # model = facilities
+    queryset = facilities.objects.all()
+    serializer_class = FacilitiesSerializer
     template_name = 'dorm.html'
+
     def get(self, request):
         initial=self.initial
         return render(request, self.template_name, {"context":initial})
-        # return HttpResponse('result')
-    # def post(self, request, *args, **kwargs):
-    #     form = self.form_class(request.POST)
-    #     if form.is_valid():
-    #         # <process form cleaned data>
-    #         return HttpResponseRedirect('/success/')
-
-    #     return render(request, self.template_name, {'context': initial})
-
-# @csrf_exempt
+    @csrf_exempt
+    def post(request):
+        if request.method == "POST":
+            try:
+                Date = request.POST["Date"]
+                facilities_name = request.POST["facilities_name"]
+                facilities_info = request.POST["facilities_info"]
+                facilities_voltage = request.POST["facilities_voltage"]
+                facilities.objects.create(Date=Date, facilities_name=facilities_name, facilities_info=facilities_info, facilities_voltage=facilities_voltage)
+                print("Date:",Date,"facilities_name:",facilities_name,"facilities_info:",facilities_info,"facilities_voltage:",facilities_voltage)
+                return JsonResponse({"post":"success"})
+                # return render(request, 'dorm.html', {"context":facilities.objects.all()})
+            except:
+                print("post fail",request.POST)
+                return JsonResponse({"post":"fail"})
+@csrf_exempt
 def post(request):
     if request.method == "POST":
         try:
