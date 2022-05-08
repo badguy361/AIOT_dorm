@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from dorm.views import post
-
 from . import views
+
 urlpatterns = [
-    path('info/', views.get, name='dorm'),
+    path('info/', views.FacilitiesViewSet.get, name='dorm'),
 ]

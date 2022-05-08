@@ -72,7 +72,7 @@ def client_job(status, data): # 顯示狀態與響應
 
 def postdata():#資料放置的位置(要改成我們的伺服器)
     while 1:
-        web_url = 'http://140.115.200.38:80/postdorm/'
+        web_url = 'http://140.115.200.38:80/api/facilities/'
         facilities = 'washing machine'
         dorm=11
         floor=4
