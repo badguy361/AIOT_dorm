@@ -31,7 +31,9 @@ class FacilitiesViewSet(viewsets.ModelViewSet):
 
     def example(request):
         template_name = 'index.html'
-        return render(request, template_name)
+        queryset = facilities.objects.all()
+        # return render(request, template_name)
+        return JsonResponse({f"Date":queryset[1].Date})
 
     # @csrf_exempt #預設傳x-www-form-urlencoded格式 #form的傳法
     # def post(request):
