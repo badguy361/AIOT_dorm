@@ -10,6 +10,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import ListView
 from django.views import View
 from django.http import HttpResponseRedirect
+import json
     
 # @api_view(['GET'])
 # def getData(request):
@@ -28,7 +29,11 @@ class FacilitiesViewSet(viewsets.ModelViewSet):
         queryset = facilities.objects.all()
         return render(request, template_name, {"context":queryset})
 
-    # @csrf_exempt
+    def example(request):
+        template_name = 'index.html'
+        return render(request, template_name)
+
+    # @csrf_exempt #預設傳x-www-form-urlencoded格式 #form的傳法
     # def post(request):
     #     if request.method == "POST":
     #         try:
@@ -42,6 +47,7 @@ class FacilitiesViewSet(viewsets.ModelViewSet):
     #             # return render(request, 'dorm.html', {"context":facilities.objects.all()})
     #         except:
     #             print("post fail",request.POST)
+    #             print(request.body)
     #             return JsonResponse({"post":"fail"})
 
 # @csrf_exempt

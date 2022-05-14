@@ -19,4 +19,5 @@ from . import views
 
 urlpatterns = [
     path('info/', views.FacilitiesViewSet.get, name='dorm'),
+    path('example/', views.FacilitiesViewSet.example, name='example'),
 ]

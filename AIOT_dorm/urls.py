@@ -25,7 +25,7 @@ router = DefaultRouter()
 router.register('facilities', views.FacilitiesViewSet, basename='facilities')
 
 urlpatterns = [ 
-    # path('postdorm/', post),
+    # path('postdorm/', views.FacilitiesViewSet.post),
     # path('putdorm/', put),
     path('dorm/',include('dorm.urls')),
     # path('dorm_class/',FacilitiesView.as_view()),
