@@ -11,6 +11,7 @@ from django.views.generic import ListView
 from django.views import View
 from django.http import HttpResponseRedirect
 import json
+from django.core import serializers
     
 # @api_view(['GET'])
 # def getData(request):
@@ -29,11 +30,10 @@ class FacilitiesViewSet(viewsets.ModelViewSet):
         queryset = facilities.objects.all()
         return render(request, template_name, {"context":queryset})
 
-    def example(request):
-        template_name = 'index.html'
-        queryset = facilities.objects.all()
-        # return render(request, template_name)
-        return JsonResponse({f"Date":queryset[1].Date})
+    def getJsondata(request):
+        queryset = serializers.serialize("json",facilities.objects.all())
+        return HttpResponse(queryset)
+        # return JsonResponse({f"Date":queryset[0].Date})
 
     # @csrf_exempt #預設傳x-www-form-urlencoded格式 #form的傳法
     # def post(request):
