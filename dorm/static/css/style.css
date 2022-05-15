@@ -1,0 +1,79 @@
+img {
+    width: 15%;
+    left: 13px;
+    top: 16px;
+}
+
+
+
+body {
+    background-color: #FAF4F1
+}
+
+.site-header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #F7D1AE;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navigation ul {
+    /* 導覽列整體設定*/
+    margin: 0;
+    /* 取消外距，設定為0*/
+    padding: 14px;
+    /* 內部距離，設定為4px*/
+    text-align: center;
+    /* 文字置中*/
+    overflow: hidden;
+}
+
+.navigation ul li {
+    /* 按鈕個別設定*/
+    list-style-type: none;
+    /* 取消前面的小黑點*/
+    display: inline;
+    /* 成一行排列*/
+    margin: 0 10px;
+    /* 外距設定為0.5px*/
+    font-size: 30px;
+    /* 字體大小15px*/
+}
+
+.navigation ul li a {
+    /* 超連結設定*/
+    color: #ffffff;
+    /* 文字顏色設定*/
+    text-decoration: none;
+    /* 文字無底線*/
+}
+
+.navigation ul li a:hover {
+    /* 超連結滑鼠滑過設定*/
+    color: #000000;
+    /* 文字顏色設定*/
+    text-decoration: none;
+    /* 文字有底線*/
+}
+
+.洗衣機 {
+    position: absolute;
+    width: 436px;
+    height: 121px;
+    left: 577px;
+    top: 263px;
+
+    font-family: 'Bonbon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 118px;
+
+    color: #000000;
+}

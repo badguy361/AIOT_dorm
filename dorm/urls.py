@@ -20,5 +20,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 urlpatterns = [
     path('info/', views.FacilitiesViewSet.get, name='dorm'),
+    path('Home', views.FacilitiesViewSet.Home, name='Home'),
+    path('connect', views.FacilitiesViewSet.connect, name='connect'),
     path('getJsondata/', views.FacilitiesViewSet.getJsondata, name='Jsondata'),
 ]

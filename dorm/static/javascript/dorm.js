@@ -39,7 +39,7 @@ async function myAsyncFunction(){
                 console.log("response.json()",response)
                 return response.json();
             })
-            .then((data) => {
+            .then((data) => { //impot response.json() value to data
                 // console.log("data",data[0]["fields"]['Date'])
                 for (let facilities_index = 0; facilities_index < 4; facilities_index++){
                     jsondata.Date = data[facilities_index]["fields"]['Date']
