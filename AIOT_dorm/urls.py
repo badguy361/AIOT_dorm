@@ -25,12 +25,12 @@ router = DefaultRouter()
 router.register('facilities', views.FacilitiesViewSet, basename='facilities')
 
 urlpatterns = [ 
-    # path('postdorm/', views.FacilitiesViewSet.post),
-    # path('putdorm/', put),
     path('dorm/',include('dorm.urls')),
-    # path('dorm_class/',FacilitiesView.as_view()),
-    # path('dorm_post/',FacilitiesView.post),
     path('admin/', admin.site.urls),
     path('api/',include(router.urls)),
-    path('',views.FacilitiesViewSet.get),
+    path('',views.FacilitiesViewSet.Home),
+    # path('postdorm/', views.FacilitiesViewSet.post),
+    # path('putdorm/', put),
+    # path('dorm_class/',FacilitiesView.as_view()),
+    # path('dorm_post/',FacilitiesView.post),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
