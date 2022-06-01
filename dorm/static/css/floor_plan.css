@@ -1,0 +1,216 @@
+html,body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+ background-color:#e2ccff;
+}
+img{
+width: 15%;
+left: 13px;
+top: 20px;}
+
+
+#header{
+  width:100%;
+  height:75px;
+  top:0;
+  left:0;
+  z-index:50;
+  background-color:#e2ccff;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.text {
+    margin: 0 ;             /* 取消外距，設定為0*/
+    padding: 14px ;          /* 內部距離，設定為4px*/
+    text-align: center;      /* 文字置中*/
+    overflow:hidden;
+    list-style-type: none; /* 取消前面的小黑點*/
+    display: inline;       /* 成一行排列*/
+    font-size: 30px;
+}
+
+.text a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.text a:hover {/* 超連結滑鼠滑過設定*/
+    color: #000000;        /* 文字顏色設定*/
+    text-decoration: none ;/* 文字有底線*/
+}
+
+
+.navigation li {           /* 導覽列整體設定*/
+    margin: 0 ;             /* 取消外距，設定為0*/
+    padding: 14px ;          /* 內部距離，設定為4px*/
+    text-align: center;      /* 文字置中*/
+    overflow:hidden;
+    list-style-type: none; /* 取消前面的小黑點*/
+    display: inline;       /* 成一行排列*/
+    font-size: 30px;
+}
+.navigation ul li a:hover {/* 超連結滑鼠滑過設定*/
+    color: #000000;        /* 文字顏色設定*/
+    text-decoration: none ;/* 文字有底線*/
+}
+.navigation ul li a {      /* 超連結設定*/
+    color: #ffffff;         /* 文字顏色設定*/
+    text-decoration: none; /* 文字無底線 */
+}
+
+#back-purple {
+	width: 90%;
+  height: 85%;
+
+  background-color: #5955b3;
+  margin-right:5%;
+  margin-left:5%;
+	margin-top:0.75%;
+	margin-bottom:2%;
+
+  border-radius:30px;
+
+}
+
+#back-purple #aside {
+	width: 10%;
+  height: 97%;
+
+  background-color: #5955b3;
+	margin-left:0.75%;
+	margin-down:0.75%;
+	margin-top:0.75%;
+
+  float: left;
+  border-radius:30px;
+}
+
+#back-purple #section{
+
+	width: 88.5%;
+  height: 97%;
+
+  background-color: white;
+	margin-right:0.75%;
+	margin-down:0.75%;
+	margin-top:0.75%;
+
+  float: left;
+  border-radius:30px;
+
+}
+
+
+.asidecolumn li  {
+    display: block;
+    padding: 20px 20px 30px 20px;
+    position: relative;
+    font-weight:30;
+    font-family:  "微軟正黑體";
+    font-size: 28px;
+    text-align: left;
+
+}
+
+
+.asidecolumn li a {
+   text-decoration: none;
+   color: #fff;
+
+}
+
+.asidecolumn a:hover {/* 超連結滑鼠滑過設定*/
+    color: #000000;        /* 文字顏色設定*/
+    text-decoration: none ;/* 文字有底線*/
+}
+
+#back-purple #section #floor-plan {
+
+	width: 45%;
+  height: 100%;
+
+  background-color:#EDE6F8;
+	margin-right:0;
+	margin-down:0%;
+	margin-top:0%;
+	float: right;
+  border-top-right-radius: 30px;
+	border-bottom-right-radius:  30px;
+}
+
+
+.restroom{
+	background-color:#EDE6F8;
+	width:80%;
+	height:45%;
+	margin-right:10%;
+	margin-left:15%;
+	margin-top:2%;
+}
+
+/* #chart { */
+	/* background-color:#C9A3FA; */
+/* } */
+
+#chart .bath {
+	fill:transparent;
+	stroke:#1E5753;
+	stroke-width:0.5;
+}
+
+#chart .toliet {
+	fill:transparent;
+	stroke:#3361DE;
+	stroke-width:0.5;
+}
+
+#chart .washing {
+
+	fill:#4071F5;
+	stroke:black;
+	stroke-width:0.5;
+}
+#chart .dryer {
+	fill:transparent;
+	stroke:#D14C1A;
+	stroke-width:0.5;
+}
+
+#washing-1, #washing-2 {
+	fill:#FAF4F1;
+	stroke:transparent;
+	stroke-width:1;
+}
+
+#floor-plan h1 {
+	  font-family:  "微軟正黑體";
+		width:80%;
+		height:6%;
+    font-size: 24px;
+		color: white;
+		text-align: center;
+		background-color: #5955b3;
+		margin-right:10%;
+		margin-left:10%;
+		border-radius:30px;
+		margin-top:2%;
+}
+
+#floor-plan p {
+	  font-family:  "微軟正黑體";
+		width:80%;
+		height:6%;
+    font-size: 24px;
+		color: white;
+		text-align: center;
+		background-color: #A499AC;
+		margin-right:10%;
+		margin-left:10%;
+		border-radius:30px;
+
+}
