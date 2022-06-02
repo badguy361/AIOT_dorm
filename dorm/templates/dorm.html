@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/dorm.css' %}">
+    <meta charset="UTF-8">
+    <title>AIOT dorm</title>
+</head>
+<body>
+    {% load static %}
+    <script src="{% static '/javascript/dorm.js' %}"></script>
+    <table>
+        <thead>
+            <tr>
+                <th>日期時間</th>
+                <th>使用設施</th>
+                <th>使用狀況</th>
+                <th>設施電量</th>
+                <th>設施震動</th>
+                <th>設施震動_X</th>
+                <th>設施震動_Y</th>
+                <th>設施震動_Z</th>
+                <th>備註</th>
+                <th>設施電流</th>
+                <th>設施功率</th>
+                <th>設施電壓</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in context%}
+                <tr>
+                    <td class='date'>{{ data.Date }}</td>
+                    <td class='facilities name'>{{ data.facilities_name }}</td>
+                    <td class='facilities useage'>{{ data.facilities_useage }}</td>
+                    <td class='facilities battery'>{{ data.battery }}</td>
+                    <td class='facilities Acce'>{{ data.Acce }}</td>
+                    <td class='facilities Acce_X'>{{ data.Acce_X }}</td>
+                    <td class='facilities Acce_Y'>{{ data.Acce_Y }}</td>
+                    <td class='facilities Acce_Z'>{{ data.Acce_Z }}</td>
+                    <td class='facilities Temp'>{{ data.Temp }}</td>
+                    <td class='facilities Current'>{{ data.Current }}</td>
+                    <td class='facilities Power'>{{ data.Power }}</td>
+                    <td class='facilities Voltage'>{{ data.Voltage }}</td>
+                </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+    {% comment %} <h1>Use info:</h1> {% endcomment %}
+    <!-- <div>{{tmp}}</div> -->
+    {% comment %} <h1>Date : {{Date}}</h1>
+    <h1>Facilities : {{facilities_list}}</h1>
+    <h1>Use status : {{facilities_info}}</h1>
+    <h1>Facilities voltage : {{facilities_voltage}}</h1> {% endcomment %}
+</body>
+</html> 
