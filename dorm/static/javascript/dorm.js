@@ -68,13 +68,22 @@ async function myAsyncFunction(){
                     Current[facilities_index].innerText = jsondata.Current
                     Power[facilities_index].innerText = jsondata.Power
                     Voltage[facilities_index].innerText = jsondata.Voltage
+                    Voltage[facilities_index].style.background = 'white'
                     battery[facilities_index].innerText = jsondata.battery
                 }
+                
+                if (parseInt(Voltage[2].innerText) > 10){
+                    Voltage[2].style.background= 'yellow'
+                }else{
+                    console.log('沒有大於')
+                }
+
             })
             .catch((error) => {
                 console.log(`Error: ${error}`);
             });
-
+        
+            
         await delay(10);
         }
 }
