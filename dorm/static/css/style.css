@@ -11,6 +11,9 @@ img {
     top: 20px;
 }
 
+#logo{
+    width:10%;
+}
 
 #header {
     width: 100%;
@@ -183,9 +186,9 @@ img {
     stroke-width: 0.5;
 }
 
-.shower:hover {
-    opacity: 1;
-}
+/* .shower:hover {
+    opacity: 1;f
+} */
 
 #chart .toliet {
     fill: transparent;
@@ -198,8 +201,7 @@ img {
 }
 
 #chart .washing {
-
-    fill: #4071F5;
+    fill: #faf4f1;
     stroke: black;
     stroke-width: 0.5;
 }
@@ -210,12 +212,10 @@ img {
     stroke-width: 0.2;
 }
 
-.hot-wind {
-
+#dryerMachine-1 {
     stroke-width: 3;
     opacity: 0.1;
-
-    animation: dash 1.4s linear infinite;
+    /* animation: dash 1.4s linear infinite; */
 }
 
 /* 烘衣機的動畫設定 */
@@ -228,10 +228,10 @@ img {
     }
 }
 
-.hot-wind:hover {
+/* #dryerMachine-1:hover {
     stroke-width: 3;
     opacity: 1;
-}
+} */
 
 #washing-1,
 #washing-2 {
