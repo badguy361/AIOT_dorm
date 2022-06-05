@@ -36,11 +36,11 @@ class FacilitiesViewSet(viewsets.ModelViewSet):
         # return JsonResponse({f"Date":queryset[0].Date})
 
     def Home(request):
-        template_name = 'Home.html'
+        template_name = 'dormitory.html'
         return render(request, template_name)
 
     def connect(request):
-        template_name = 'connect.html'
+        template_name = 'info.html'
         return render(request, template_name)
 
     # @csrf_exempt #預設傳x-www-form-urlencoded格式 #form的傳法
