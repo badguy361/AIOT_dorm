@@ -239,12 +239,12 @@ img {
     stroke: transparent;
     stroke-width: 0;
 }
-
+/*
 #chart .washing:hover {
 
     fill: #FAF4F1;
     pointer-events: all;
-}
+} */
 
 #floor-plan h1 {
     font-family: "微軟正黑體";
