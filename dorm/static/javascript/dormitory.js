@@ -79,17 +79,17 @@ async function myAsyncFunction() {
 myAsyncFunction();
 
 // API pratice
-fetch("https://api.unsplash.com/photos/random/?client_id=28snvwYLK_PZOGpDBVrXCf62otQb0xR3RRmiToO6ggs")
-    .then((res) => {
-        const data = res.json();
-        return data;
-    })
-    .then((data) => {
-        console.log(data);
-        for (let i = 0; i < data.length; i++) {
-            let container = document.querySelector(".container");
-            let img = document.createElement("img");
-            img.setAttribute("src", data[i].urls.small);
-            container.append(img);
-        }
-    });
+// fetch("https://api.unsplash.com/photos/random/?client_id=28snvwYLK_PZOGpDBVrXCf62otQb0xR3RRmiToO6ggs")
+//     .then((res) => {
+//         const data = res.json();
+//         return data;
+//     })
+//     .then((data) => {
+//         console.log(data);
+//         for (let i = 0; i < data.length; i++) {
+//             let container = document.querySelector(".container");
+//             let img = document.createElement("img");
+//             img.setAttribute("src", data[i].urls.small);
+//             container.append(img);
+//         }
+//     });
