@@ -54,7 +54,6 @@ img {
     /* 文字有底線*/
 }
 
-
 .navigation li {
     /* 導覽列整體設定*/
     margin: 0;
@@ -96,21 +95,19 @@ img {
     margin-left: 5%;
     margin-top: 0.75%;
     margin-bottom: 2%;
-
     border-radius: 30px;
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 #back-purple #aside {
     width: 10%;
     height: 97%;
-
     background-color: #5955b3;
     margin-left: 0.75%;
-
     margin-top: 0.75%;
-
-    float: left;
     border-radius: 30px;
 }
 
@@ -118,13 +115,9 @@ img {
 
     width: 88.5%;
     height: 97%;
-
     background-color: white;
     margin-right: 0.75%;
-
     margin-top: 0.75%;
-
-    float: left;
     border-radius: 30px;
 
 }
@@ -157,16 +150,15 @@ img {
 }
 
 #back-purple #section #floor-plan {
-
-    width: 45%;
+    width: 70%;
+    min-width: 320px;
     height: 100%;
-
     background-color: #EDE6F8;
-    margin-right: 0;
+    margin-right: 0%;
     margin-top: 0%;
-    float: right;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+/*     float: right; */
 }
 
 
@@ -410,91 +402,59 @@ img {
 }
 
 .content {
+/*     position: relative; */
     /*设置可见部分的高度*/
-    height: 710px;
+    height: 100%;
     /*随便设置个颜色区分可滚动区域和其他区域*/
     background-color: white;
-    /*设置在竖直方向上可滚动*/
+    /* 设置在竖直方向上可滚动 */
     -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
-    position: relative;
-    top: -15px;
-    border-radius: 30px;
+    width: 100%; 
+    /* top: -15px; */
+    margin-left: 0%;
+    margin-top: 0%;
     /*overflow:hidden样式可以不写，因为scroll会自动隐藏超出content高度的部分*/
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .content::-webkit-scrollbar {
     width: 10px;
 }
 
+#section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 
+.rectangle{
+    position: relative;
+    max-width: 90%;
+    height: 15%;
+    background: #f2f2f2;
+    left: 7.5%;
+    border-radius: 30px;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+}
 
 .content p {
     text-decoration: none;
     text-align: left;
-    position: absolute;
-    top: -50px;
-    left: 20px;
+    position: relative;
+    margin-top: 0%;
+    margin-left: 3%;
     font-size: 100px;
     font-family: 'Roboto', sans-serif;
-    ;
-
+    /* float: left; */
 }
-
-
-
-#rectangle1 {
-    width: 80%;
-    height: 30%;
-    background: #f2f2f2;
-    position: relative;
-    top: 10px;
-    left: 7.5%;
-    border-radius: 30px;
-    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.3);
-}
-
-#rectangle2 {
-    width: 80%;
-    height: 30%;
-    background: #f4f5ff;
-    position: relative;
-    top: 30px;
-    left: 7.5%;
-    border-radius: 30px;
-    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.3);
-}
-
-#rectangle3 {
-    width: 80%;
-    height: 30%;
-    background: #f7ecfc;
-    position: relative;
-    top: 50px;
-    left: 7.5%;
-    border-radius: 30px;
-    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.3);
-}
-
-#rectangle4 {
-    width: 80%;
-    height: 30%;
-    background: #fff6dc;
-    position: relative;
-    top: 70px;
-    left: 7.5%;
-    border-radius: 30px;
-    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.3);
-
-}
-
-#rectangle5 {
-    width: 80%;
-    height: 30%;
-    background: #d6e4ff;
-    position: relative;
-    top: 90px;
-    left: 7.5%;
-    border-radius: 30px;
-    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.3);
+.Icon-figure {
+  position: relative;
+  top: 20%;
+  height: 75%;
+  width: auto;
 }
