@@ -119,9 +119,11 @@ img {
     margin-right: 0.75%;
     margin-top: 0.75%;
     border-radius: 30px;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
 }
-
 
 .asidecolumn li {
     display: block;
@@ -408,29 +410,30 @@ img {
     /*随便设置个颜色区分可滚动区域和其他区域*/
     background-color: white;
     /* 设置在竖直方向上可滚动 */
-    -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
     width: 100%; 
     /* top: -15px; */
     margin-left: 0%;
     margin-top: 0%;
-    /*overflow:hidden样式可以不写，因为scroll会自动隐藏超出content高度的部分*/
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+  /*overflow:hidden样式可以不写，因为scroll会自动隐藏超出content高度的部分*/
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
 }
 
 .content::-webkit-scrollbar {
     width: 10px;
 }
 
-#section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
+
 
 .rectangle{
     position: relative;
+    margin-top: 3%;
     max-width: 90%;
     height: 15%;
     background: #f2f2f2;
@@ -439,7 +442,8 @@ img {
     box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
+
 }
 
 .content p {
@@ -450,11 +454,14 @@ img {
     margin-left: 3%;
     font-size: 100px;
     font-family: 'Roboto', sans-serif;
-    /* float: left; */
+    float: left;
 }
-.Icon-figure {
+.rectangle img {
   position: relative;
+  margin-left: auto;
+  margin-right: 5%;
   top: 20%;
   height: 75%;
   width: auto;
+  /* flex-wrap: nowrap; */
 }
