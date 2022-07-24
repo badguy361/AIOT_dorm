@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    padding: 0;
+
     margin: 0;
 }
 
@@ -15,7 +15,7 @@ img {
     width:10%;
 }
 
-#header {
+header {
     width: 100%;
     height: 75px;
     top: 0;
@@ -88,76 +88,36 @@ img {
 
 #back-purple {
     width: 90%;
-    height: 85%;
-
+    height: 88%;
     background-color: #5955b3;
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 0.75%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     border-radius: 30px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
-#back-purple #aside {
-    width: 10%;
-    height: 97%;
-    background-color: #5955b3;
-    margin-left: 0.75%;
-    margin-top: 0.75%;
-    border-radius: 30px;
-}
-
-#back-purple #section {
-
-    width: 88.5%;
-    height: 97%;
+#section {
+    width: 41%;
+    height: 90%;
     background-color: white;
-    margin-right: 0.75%;
-    margin-top: 0.75%;
+    margin: 3% 0 5% 5%;
     border-radius: 30px;
     display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
 }
 
-.asidecolumn li {
-    display: block;
-    padding: 20px 20px 30px 20px;
-    position: relative;
-    font-weight: 30;
-    font-family: "微軟正黑體";
-    font-size: 28px;
-    text-align: left;
-
-}
-
-
-.asidecolumn li a {
-    text-decoration: none;
-    color: #fff;
-
-}
-
-.asidecolumn a:hover {
-    /* 超連結滑鼠滑過設定*/
-    color: #000000;
-    /* 文字顏色設定*/
-    text-decoration: none;
-    /* 文字有底線*/
-}
-
-#back-purple #section #floor-plan {
-    width: 70%;
-    min-width: 320px;
-    height: 100%;
+#floor-plan {
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
     background-color: #EDE6F8;
-    margin-right: 0%;
-    margin-top: 0%;
+    margin: 3% 5% 5% 0;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 /*     float: right; */
@@ -168,8 +128,8 @@ img {
     background-color: #EDE6F8;
     width: 80%;
     height: 45%;
-    margin-right: 10%;
-    margin-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 2%;
 }
 
@@ -203,14 +163,26 @@ img {
 #chart .dryer {
     fill: transparent;
     stroke: #D14C1A;
-    stroke-width: 0.2;
+    stroke-width: 0.6;
 }
 
 #dryerMachine-1 {
     stroke-width: 3;
-    opacity: 0.1;
+    opacity: 0.15;
     /* animation: dash 1.4s linear infinite; */
 }
+
+#chart .wc {
+
+      fill: transparent;
+      stroke: #2FB1F2;
+      stroke-width: 0.5;
+}
+.wc_ {
+  transform: rotate(90deg);
+  opacity: 0.1;
+}
+
 
 /* 烘衣機的動畫設定 */
 
@@ -253,33 +225,39 @@ img {
     border-radius: 30px;
     margin-top: 2%;
 }
-
+.usage-box {
+    height:40%;
+    width: 100%;
+    margin-top:5%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
 .usage {
-    width: 80%;
-    height: 5%;
+    width: 67%;
+    height: 12%;
     background-color: #A499AC;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 5%;
     border-radius: 30px;
     font-size: 24px;
     color: white;
     font-family: "微軟正黑體";
-}
-
-#wash-usage {
     display: flex;
     justify-content: flex-start;
 }
-
-.wash-all-box {
-    display: flex;
-    flex-basis: 45%;
-    justify-content: space-center;
-    margin-top: 0.46%;
+.facility-name {
+  width:30%;
+  text-align: center;
 }
 
-.wash-box {
+.all-box {
+    width:70%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.box {
     border: solid;
     height: 23px;
     width: 23px;
@@ -287,8 +265,6 @@ img {
     background-color: #609755;
     border-width: 2px;
     border-radius: 8px;
-    margin-left: 9%;
-    margin-top: 1.13%;
 }
 
 #wash-box-1:hover {
@@ -299,84 +275,12 @@ img {
     background-color: #CC3014;
 }
 
-#dry-usage {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.dry-all-box {
-    display: flex;
-    flex-basis: 24.4%;
-    justify-content: center;
-    margin-top: 0.46%;
-}
-
-.dry-box {
-    border: solid;
-    height: 23px;
-    width: 23px;
-    border-color: #5D626F;
-    background-color: #609755;
-    border-width: 2px;
-    border-radius: 8px;
-    margin-left: 8%;
-    margin-top: 1.13%;
-}
-
 #dry-box-1:hover {
     background-color: #CC3014;
 }
 
-#dis-usage {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.dis-all-box {
-    display: flex;
-    flex-basis: 16%;
-    justify-content: center;
-    margin-top: 0.46%;
-}
-
-.dis-box {
-    border: solid;
-    height: 23px;
-    width: 23px;
-    border-color: #5D626F;
-    background-color: #609755;
-    border-width: 2px;
-    border-radius: 8px;
-    margin-left: 8%;
-    margin-top: 1.13%;
-}
-
 #dis-box-1:hover {
     background-color: #CC3014;
-}
-
-#bath-usage {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.bath-all-box {
-    display: flex;
-    flex-basis: 70%;
-    justify-content: center;
-    margin-top: 0.46%;
-}
-
-.bath-box {
-    border: solid;
-    height: 23px;
-    width: 23px;
-    border-color: #5D626F;
-    background-color: #609755;
-    border-width: 2px;
-    border-radius: 8px;
-    margin-left: 8%;
-    margin-top: 1.13%;
 }
 
 #bath-box-1:hover {
@@ -402,7 +306,19 @@ img {
 #bath-box-6:hover {
     background-color: #CC3014;
 }
-
+.content h1 {
+    font-family: "微軟正黑體";
+    width: 80%;
+    height: 60%;
+    font-size: 24px;
+    color: #5955b3;
+    text-align: center;
+    background-color: #EDE6F8;
+    margin-right: 5%;
+    margin-left: 7.5%;
+    border-radius: 30px;
+    margin-top: 2%;
+}
 .content {
 /*     position: relative; */
     /*设置可见部分的高度*/
@@ -410,7 +326,7 @@ img {
     /*随便设置个颜色区分可滚动区域和其他区域*/
     background-color: white;
     /* 设置在竖直方向上可滚动 */
-    width: 100%; 
+    width: 95%;
     /* top: -15px; */
     margin-left: 0%;
     margin-top: 0%;
@@ -421,15 +337,8 @@ img {
     flex-wrap: nowrap;
     /* justify-content: space-between; */
   /*overflow:hidden样式可以不写，因为scroll会自动隐藏超出content高度的部分*/
-    -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
+
 }
-
-.content::-webkit-scrollbar {
-    width: 10px;
-}
-
-
 
 .rectangle{
     position: relative;
@@ -437,13 +346,12 @@ img {
     max-width: 90%;
     height: 15%;
     background: #f2f2f2;
-    left: 7.5%;
+    margin-left: 3%;
     border-radius: 30px;
     box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
 }
 
 .content p {
@@ -451,7 +359,7 @@ img {
     text-align: left;
     position: relative;
     margin-top: 0%;
-    margin-left: 3%;
+    margin-left: 2%;
     font-size: 100px;
     font-family: 'Roboto', sans-serif;
     float: left;
@@ -459,9 +367,8 @@ img {
 .rectangle img {
   position: relative;
   margin-left: auto;
-  margin-right: 5%;
+  margin-right: 6%;
   top: 20%;
   height: 75%;
   width: auto;
-  /* flex-wrap: nowrap; */
 }
