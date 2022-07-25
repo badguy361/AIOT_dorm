@@ -46,6 +46,7 @@ header {
     text-decoration: none;
 }
 
+
 .text a:hover {
     /* 超連結滑鼠滑過設定*/
     color: #000000;
@@ -111,18 +112,69 @@ header {
     flex-wrap: nowrap;
 
 }
-
-#floor-plan {
-    width: 49%;
-    /* min-width: 320px; */
-    height: 90%;
-    background-color: #EDE6F8;
-    margin: 3% 5% 5% 0;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-/*     float: right; */
+#floor-plan-1 {
+  width: 49%;
+  /* min-width: 320px; */
+  height: 90%;
+  background-color: #EDE6F8;
+  margin: 3% 5% 5% 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
+.F {
+    font-family: "微軟正黑體";
+    width: 80%;
+    height: 5%;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background-color: #5955b3;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 30px;
+    margin-top: 2%;
+}
+#floor-plan-2 {
+  width: 49%;
+  /* min-width: 320px; */
+  height: 90%;
+  background-color: #EDE6F8;
+  margin: 3% 5% 5% 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+
+#floor-plan-3 {
+  width: 49%;
+  /* min-width: 320px; */
+  height: 90%;
+  background-color: #EDE6F8;
+  margin: 3% 5% 5% 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#floor-plan-4 {
+  width: 49%;
+  /* min-width: 320px; */
+  height: 90%;
+  background-color: #EDE6F8;
+  margin: 3% 5% 5% 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#floor-plan-5 {
+  width: 49%;
+  /* min-width: 320px; */
+  height: 90%;
+  background-color: #EDE6F8;
+  margin: 3% 5% 5% 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
 
 .restroom {
     background-color: #EDE6F8;
@@ -212,20 +264,8 @@ header {
     pointer-events: all;
 } */
 
-#floor-plan h1 {
-    font-family: "微軟正黑體";
-    width: 80%;
-    height: 5%;
-    font-size: 24px;
-    color: white;
-    text-align: center;
-    background-color: #5955b3;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 30px;
-    margin-top: 2%;
-}
 .usage-box {
+
     height:40%;
     width: 100%;
     margin-top:5%;
@@ -262,7 +302,7 @@ header {
     height: 23px;
     width: 23px;
     border-color: #5D626F;
-    background-color: #609755;
+    background-color: #0B9A48;
     border-width: 2px;
     border-radius: 8px;
 }
