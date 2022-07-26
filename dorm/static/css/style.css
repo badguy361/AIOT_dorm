@@ -12,7 +12,7 @@ img {
 }
 
 #logo{
-    width:10%;
+    width:150px;
 }
 
 header {
@@ -45,7 +45,6 @@ header {
     color: #fff;
     text-decoration: none;
 }
-
 
 .text a:hover {
     /* 超連結滑鼠滑過設定*/
@@ -86,8 +85,8 @@ header {
     text-decoration: none;
     /* 文字無底線 */
 }
-
-#back-purple {
+/*   --------------------------   back-purple    ------------------------------- */
+  .back-purple {
     width: 90%;
     height: 88%;
     background-color: #5955b3;
@@ -99,83 +98,36 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
-
-#section {
+  }
+/*   ----------------------------   section    --------------------------------- */
+  .section {
     width: 41%;
     height: 90%;
     background-color: white;
     margin: 3% 0 5% 5%;
-    border-radius: 30px;
+    border-bottom-left-radius:  30px;
+    border-top-left-radius:  30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
 
-}
-#floor-plan-1 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-
-.F {
-    font-family: "微軟正黑體";
-    width: 80%;
-    height: 5%;
-    font-size: 24px;
-    color: white;
-    text-align: center;
-    background-color: #5955b3;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 30px;
-    margin-top: 2%;
-}
-#floor-plan-2 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
+    }
+/*   ---------------------------   floor-plan    ------------------------------- */
+    .floor-plan {
+        width: 49%;
+        /* min-width: 320px; */
+        height: 90%;
+        background-color: #EDE6F8;
+        margin: 3% 5% 5% 0;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    /*     float: right; */
+    }
 
 
-#floor-plan-3 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
 
-#floor-plan-4 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
 
-#floor-plan-5 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-
+/*   ------------------------   floor-plan detail-1    ----------------------------- */
 .restroom {
     background-color: #EDE6F8;
     width: 80%;
@@ -263,9 +215,22 @@ header {
     fill: #FAF4F1;
     pointer-events: all;
 } */
-
+/*   -----------------------------   floor-plan --------------------------------- */
+.floor-plan h1 {
+    font-family: "微軟正黑體";
+    width: 80%;
+    height: 5%;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background-color: #5955b3;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 30px;
+    margin-top: 2%;
+}
+/*   ------------------------   floor-plan detail-2   ----------------------------- */
 .usage-box {
-
     height:40%;
     width: 100%;
     margin-top:5%;
@@ -302,7 +267,7 @@ header {
     height: 23px;
     width: 23px;
     border-color: #5D626F;
-    background-color: #0B9A48;
+    background-color: #609755;
     border-width: 2px;
     border-radius: 8px;
 }
@@ -346,16 +311,17 @@ header {
 #bath-box-6:hover {
     background-color: #CC3014;
 }
+/*   --------------------------   content(floor) ------------------------------- */
 .content h1 {
     font-family: "微軟正黑體";
-    width: 80%;
+    width: 90%;
     height: 60%;
     font-size: 24px;
     color: #5955b3;
     text-align: center;
     background-color: #EDE6F8;
     margin-right: 5%;
-    margin-left: 7.5%;
+    margin-left: 0%;
     border-radius: 30px;
     margin-top: 2%;
 }
@@ -379,7 +345,36 @@ header {
   /*overflow:hidden样式可以不写，因为scroll会自动隐藏超出content高度的部分*/
 
 }
+/*   ------------------------   content(floor)-detail ---------------------------- */
 
+.content p {
+    text-decoration: none;
+    text-align: left;
+    position: relative;
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 9vh;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+}
+.floor-box{
+  margin: 0% 30px 0% -30px;
+  height: 90%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+/*   background: #f1f2c2; */
+}
+.rectangle img {
+  position: relative;
+  margin-left: auto;
+  margin-right: 6%;
+  top: 20%;
+  height: 75%;
+  width: auto;
+}
 .rectangle{
     position: relative;
     margin-top: 3%;
@@ -392,23 +387,77 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+  
 }
 
-.content p {
-    text-decoration: none;
-    text-align: left;
-    position: relative;
-    margin-top: 0%;
-    margin-left: 2%;
-    font-size: 100px;
-    font-family: 'Roboto', sans-serif;
-    float: left;
-}
-.rectangle img {
-  position: relative;
-  margin-left: auto;
-  margin-right: 6%;
-  top: 20%;
-  height: 75%;
-  width: auto;
+/*   ------------------------------   RWD    ----------------------------------- */
+
+/* For mobile phones: */
+/* [class*="col-"] {
+  width: 100%;
+} */
+
+@media only screen and (max-width: 650px) {
+  /* For tablets: */
+  .col-p-1 {width: 8.33%;}
+  .col-p-2 {width: 16.66%;}
+  .col-p-3 {width: 25%;}
+  .col-p-4 {width: 33.33%;}
+  .col-p-5 {width: 41.66%;}
+  .col-p-6 {width: 50%;}
+  .col-p-7 {width: 58.33%;}
+  .col-p-8 {width: 66.66%;}
+  .col-p-9 {width: 75%;}
+  .col-p-10 {width: 83.33%;}
+  .col-p-11 {width: 91.66%;}
+  .col-p-12 {width: 100%;}
+  .column-p-box {flex-direction: column;}
+  .section{
+    width: auto;
+    height: 18%;
+    margin: 2% 3% 0% 3%;
+    border-radius:  30px;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+  }
+  .back-purple{margin-top: 3.75%;}
+  .content{
+    width: auto;
+     margin: 0% 0% 0% 0%;
+     border-radius:  30px;
+     background: #f2f2f2;
+  }
+  .floor-plan{
+      width: auto;
+      /* min-width: 320px; */
+      height: 77%;
+      margin: 2% 5% 6% 5%;
+      border-radius: 30px;
+  }
+  .rectangle img {display:none;}
+  .content p {font-size: 5vw;transform: translateY(50%)}
+  .rectangle {
+    height:70%;width:15%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  .floor-box {
+    margin: 0% 30px 0% -30px;
+    height: 50%;
+    width: auto;
+    margin-bottom: 0%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:space-around;
+    background: #f1f2c2;
+  }
+    
 }
