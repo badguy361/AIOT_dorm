@@ -15,7 +15,7 @@ async function myAsyncFunction() {
         const dryerMachine_box1 = document.getElementById('dry-box-1');
         const dryerMachine_1 = document.getElementById('dryerMachine-1');
 
-        console.log("start to fetch data ");
+        console.log("start to fetch data");
         fetch('http://127.0.0.1:8000/dorm/getJsondata')
             .then((response) => {
                 console.log("response.json()", response);
