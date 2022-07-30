@@ -393,9 +393,31 @@ header {
 /*   ------------------------------   RWD    ----------------------------------- */
 
 /* For mobile phones: */
-/* [class*="col-"] {
+[class*="col-"] {
   width: 100%;
-} */
+}
+/* For dest-book: */
+@media only screen and (min-height: 1000px) and (max-width: 1960px) {
+  #imag-4 {display:none;}
+}
+@media only screen and (min-height: 1000px)  and (max-width: 1440px) {
+  #imag-3 {display:none;}
+}
+@media only screen and (min-height: 1000px)  and (max-width: 970px) {
+  #imag-2 {display:none;}
+  .content p {margin-right:0px;}
+}
+/* For Tablets */
+@media only screen and (min-height: 750px)  and (max-width: 1480px) {
+  #imag-4 {display:none;}
+}
+@media only screen and (min-height: 750px)  and (max-width: 1000px) {
+  #imag-3 {display:none;}
+}
+/* For mobile phones: */
+@media only screen and (max-height: 600px){
+  #imag-4 {display:none;}
+}
 
 @media only screen and (max-width: 650px) {
   /* For tablets: */
