@@ -2,11 +2,12 @@
 <html>
 
 <head>
+	{% load static %}
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>雙欄式網頁版型</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-	<link href="{% static '/css/style.css' %}" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="style.css">
+	<link href="{% static '/css/form_style.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="form_style.css">
 </head>
 
 <body background="https://i.imgur.com/G4Fa14Y.png">
@@ -23,44 +24,13 @@
 			</ul>
 		</nav>
 	</header>
-
-
-
+<img src='https://i.imgur.com/a1SDK6P.png' id='school' alt="My test image">
 <div id="back-purple">
 
-		
- <form action="#" method="get">
-<div id=box1>
-  <p id=word1>整體來說，您滿不滿意此系統</p>
-      <p class=selectRole><input type="radio"name="rating"value="yes">
-        是<br></p>
-         <p class=selectRole><input type="radio"name="rating"value="no">
-        否<br></p>
-         <p class=selectRole><input type="radio"name="rating"value="maybe">
-        不一定<br></p>
-      </p>
+<iframe id='form 'src="https://docs.google.com/forms/d/e/1FAIpQLSeYu9A7C1xxBPW36jEUhEHvRkasUkVJYbKRyeveidFfpiHw5Q/viewform?embedded=true" width= 100% height=100% frameborder="0" marginheight="0" marginwidth="0" scrollbar-width: none >載入中…</iframe>
 </div>
-<div id=box2>DIV區塊</div>
-<div id=box3>
- <div class=selectRole>
-    <input type="checkbox">
-    <label>Do you like cheese?</label>
-    
-</div>
-<div>
-    <input type="checkbox">
-    <label>Do you like peas?</label>
-    
-</div> 
-</div>
-<div id=d>DIV區塊</div>
-<div id=box3>DIV區塊</div> 
-</form>
 
-
-</div> <!--back purple end here -->
-
-    <script src="{% static '/javascript/dormitory.js' %}"></script>
+ <script src="{% static '/javascript/dormitory.js' %}"></script>
 
 
 </body>
