@@ -112,15 +112,6 @@ header {
     flex-wrap: nowrap;
 
 }
-#floor-plan-1 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
 
 .F {
     font-family: "微軟正黑體";
@@ -135,7 +126,8 @@ header {
     border-radius: 30px;
     margin-top: 2%;
 }
-#floor-plan-2 {
+
+#floor-plan-1 {
   width: 49%;
   /* min-width: 320px; */
   height: 90%;
@@ -145,6 +137,15 @@ header {
   border-bottom-right-radius: 30px;
 }
 
+#floor-plan-2 {
+  width: 49%;
+  /* min-width: 320px; */
+  height: 90%;
+  background-color: #EDE6F8;
+  margin: 3% 5% 5% 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
 
 #floor-plan-3 {
   width: 49%;
@@ -185,7 +186,6 @@ header {
     margin-top: 2%;
 }
 
-
 #chart .bath {
     fill: transparent;
     stroke: #1E5753;
@@ -202,9 +202,9 @@ header {
     stroke-width: 0.5;
 }
 
-#chart .disabled:hover {
+/* #chart .disabled:hover {
     opacity: 0.7;
-}
+} */
 
 #chart .washing {
     fill: #faf4f1;
@@ -265,7 +265,6 @@ header {
 } */
 
 .usage-box {
-
     height:40%;
     width: 100%;
     margin-top:5%;
@@ -273,6 +272,7 @@ header {
     flex-wrap:wrap;
     justify-content:space-around;
 }
+
 .usage {
     width: 67%;
     height: 12%;
@@ -284,6 +284,7 @@ header {
     display: flex;
     justify-content: flex-start;
 }
+
 .facility-name {
   width:30%;
   text-align: center;
@@ -346,6 +347,7 @@ header {
 #bath-box-6:hover {
     background-color: #CC3014;
 }
+
 .content h1 {
     font-family: "微軟正黑體";
     width: 80%;
