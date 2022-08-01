@@ -19,8 +19,20 @@ from . import views
 from django.conf.urls.static import static
 from django.conf import settings
 urlpatterns = [
-    path('info/', views.FacilitiesViewSet.get, name='dorm'),
-    path('Home/', views.FacilitiesViewSet.Home, name='Home'),
-    path('connect', views.FacilitiesViewSet.connect, name='connect'),
-    path('getJsondata/', views.FacilitiesViewSet.getJsondata, name='Jsondata'),
+    path('info1/', views.FacilitiesViewSet1.get, name='dorm'),
+    # path('connect', views.FacilitiesViewSet4.connect, name='connect'),
+    path('getJsondata1/', views.FacilitiesViewSet1.getJsondata, name='Jsondata'),
+
+    path('info2/', views.FacilitiesViewSet2.get, name='dorm'),
+    path('getJsondata2/', views.FacilitiesViewSet2.getJsondata, name='Jsondata'),
+
+    path('info3/', views.FacilitiesViewSet3.get, name='dorm'),
+    path('getJsondata3/', views.FacilitiesViewSet3.getJsondata, name='Jsondata'),
+
+    path('info4/', views.FacilitiesViewSet4.get, name='dorm'),
+    path('Home/', views.FacilitiesViewSet4.Home, name='Home'),
+    path('getJsondata4/', views.FacilitiesViewSet4.getJsondata, name='Jsondata'),
+
+    path('info5/', views.FacilitiesViewSet5.get, name='dorm'),
+    path('getJsondata5/', views.FacilitiesViewSet5.getJsondata, name='Jsondata'),
 ]

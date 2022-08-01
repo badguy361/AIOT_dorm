@@ -22,13 +22,17 @@ from rest_framework.routers import DefaultRouter
 from dorm import views
 
 router = DefaultRouter()
-router.register('facilities', views.FacilitiesViewSet, basename='facilities')
+router.register('facilities1', views.FacilitiesViewSet1, basename='facilities1')
+router.register('facilities2', views.FacilitiesViewSet2, basename='facilities2')
+router.register('facilities3', views.FacilitiesViewSet3, basename='facilities3')
+router.register('facilities4', views.FacilitiesViewSet4, basename='facilities4')
+router.register('facilities5', views.FacilitiesViewSet5, basename='facilities5')
 
 urlpatterns = [ 
     path('dorm/',include('dorm.urls')),
     path('admin/', admin.site.urls),
     path('api/',include(router.urls)),
-    path('',views.FacilitiesViewSet.Home),
+    path('',views.FacilitiesViewSet4.Home),
     # path('postdorm/', views.FacilitiesViewSet.post),
     # path('putdorm/', put),
     # path('dorm_class/',FacilitiesView.as_view()),

@@ -20,11 +20,75 @@ from django.core import serializers
 #     serializer = FacilitiesSerializer(data,many=True)
 #     return Response(serializer.data[0])
 
-# Create your views here.
-class FacilitiesViewSet(viewsets.ModelViewSet):
-    # model = facilities
-    queryset = facilities_fourthfloor.objects.all()
-    serializer_class = FacilitiesSerializer #要加這行不然put沒法過
+class FacilitiesViewSet1(viewsets.ModelViewSet):
+    queryset = facilities_firstfloor.objects.all() #要加這行不然put沒法過
+    serializer_class = FacilitiesSerializer
+    
+    def get(request):
+        template_name = 'dorm.html'
+        queryset = facilities_firstfloor.objects.all()
+        return render(request, template_name, {"context":queryset})
+
+    def getJsondata(request):
+        queryset = serializers.serialize("json",facilities_firstfloor.objects.all())
+        return HttpResponse(queryset)
+
+    def Home(request):
+        template_name = 'dormitory.html'
+        return render(request, template_name)
+
+    # def connect(request):
+    #     template_name = 'info.html'
+    #     return render(request, template_name)
+
+
+class FacilitiesViewSet2(viewsets.ModelViewSet):
+    queryset = facilities_secondfloor.objects.all() #要加這行不然put沒法過
+    serializer_class = FacilitiesSerializer
+    
+    def get(request):
+        template_name = 'dorm.html'
+        queryset = facilities_secondfloor.objects.all()
+        return render(request, template_name, {"context":queryset})
+
+    def getJsondata(request):
+        queryset = serializers.serialize("json",facilities_secondfloor.objects.all())
+        return HttpResponse(queryset)
+
+    def Home(request):
+        template_name = 'dormitory.html'
+        return render(request, template_name)
+
+    # def connect(request):
+    #     template_name = 'info.html'
+    #     return render(request, template_name)
+
+
+class FacilitiesViewSet3(viewsets.ModelViewSet):
+    queryset = facilities_thirdfloor.objects.all() #要加這行不然put沒法過
+    serializer_class = FacilitiesSerializer
+    
+    def get(request):
+        template_name = 'dorm.html'
+        queryset = facilities_thirdfloor.objects.all()
+        return render(request, template_name, {"context":queryset})
+
+    def getJsondata(request):
+        queryset = serializers.serialize("json",facilities_thirdfloor.objects.all())
+        return HttpResponse(queryset)
+
+    def Home(request):
+        template_name = 'dormitory.html'
+        return render(request, template_name)
+
+    # def connect(request):
+    #     template_name = 'info.html'
+    #     return render(request, template_name)
+
+
+class FacilitiesViewSet4(viewsets.ModelViewSet):
+    queryset = facilities_fourthfloor.objects.all() #要加這行不然put沒法過
+    serializer_class = FacilitiesSerializer
     
     def get(request):
         template_name = 'dorm.html'
@@ -34,15 +98,37 @@ class FacilitiesViewSet(viewsets.ModelViewSet):
     def getJsondata(request):
         queryset = serializers.serialize("json",facilities_fourthfloor.objects.all())
         return HttpResponse(queryset)
+
+    def Home(request):
+        template_name = 'dormitory.html'
+        return render(request, template_name)
+
+    # def connect(request):
+    #     template_name = 'info.html'
+    #     return render(request, template_name)
+
+class FacilitiesViewSet5(viewsets.ModelViewSet):
+    # model = facilities
+    queryset = facilities_fifthfloor.objects.all() #要加這行不然put沒法過
+    serializer_class = FacilitiesSerializer #要加這行不然put沒法過，應該是serializer去吃queryset且是由queryset決定是哪層樓
+
+    def get(request):
+        template_name = 'dorm.html'
+        queryset = facilities_fifthfloor.objects.all()
+        return render(request, template_name, {"context":queryset})
+
+    def getJsondata(request):
+        queryset = serializers.serialize("json",facilities_fifthfloor.objects.all())
+        return HttpResponse(queryset)
         # return JsonResponse({f"Date":queryset[0].Date})
 
     def Home(request):
         template_name = 'dormitory.html'
         return render(request, template_name)
 
-    def connect(request):
-        template_name = 'info.html'
-        return render(request, template_name)
+    # def connect(request):
+    #     template_name = 'info.html'
+    #     return render(request, template_name)
 
     # @csrf_exempt #預設傳x-www-form-urlencoded格式 #form的傳法
     # def post(request):

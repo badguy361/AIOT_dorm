@@ -6,6 +6,7 @@ from dorm.models import facilities_firstfloor,facilities_secondfloor,\
 class FacilitiesSerializer(serializers.ModelSerializer):
 
     class Meta: #預設傳application json格式
+        # 這下面不加好像也沒差
         model = facilities_fourthfloor
         fields = '__all__'
         # fields = ('id',
