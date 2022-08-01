@@ -24,7 +24,7 @@ from django.core import serializers
 class FacilitiesViewSet(viewsets.ModelViewSet):
     # model = facilities
     queryset = facilities_fourthfloor.objects.all()
-    # serializer_class = FacilitiesSerializer
+    serializer_class = FacilitiesSerializer #要加這行不然put沒法過
     
     def get(request):
         template_name = 'dorm.html'
