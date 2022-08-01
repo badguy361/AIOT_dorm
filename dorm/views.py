@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from requests import Response
 from dorm import models
-from dorm.models import facilities
+from dorm.models import facilities_firstfloor,facilities_secondfloor,\
+        facilities_thirdfloor,facilities_fourthfloor,facilities_fifthfloor
 from dorm.serializers import FacilitiesSerializer
 from rest_framework import viewsets
 from rest_framework.decorators import api_view
@@ -22,16 +23,16 @@ from django.core import serializers
 # Create your views here.
 class FacilitiesViewSet(viewsets.ModelViewSet):
     # model = facilities
-    queryset = facilities.objects.all()
-    serializer_class = FacilitiesSerializer
+    queryset = facilities_fourthfloor.objects.all()
+    # serializer_class = FacilitiesSerializer
     
     def get(request):
         template_name = 'dorm.html'
-        queryset = facilities.objects.all()
+        queryset = facilities_fourthfloor.objects.all()
         return render(request, template_name, {"context":queryset})
 
     def getJsondata(request):
-        queryset = serializers.serialize("json",facilities.objects.all())
+        queryset = serializers.serialize("json",facilities_fourthfloor.objects.all())
         return HttpResponse(queryset)
         # return JsonResponse({f"Date":queryset[0].Date})
 
