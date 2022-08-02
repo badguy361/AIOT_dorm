@@ -29,7 +29,7 @@ async function myAsyncFunction() {
         const dryerMachine_1 = document.getElementById('dryerMachine');
 
         console.log("start to fetch data");
-        fetch('http://127.0.0.1:8000/dorm/getJsondata')
+        fetch('http://127.0.0.1:8000/dorm/getJsondata5')
             .then((response) => {
                 console.log("response.json()", response);
                 return response.json();

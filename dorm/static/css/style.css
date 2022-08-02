@@ -11,8 +11,8 @@ img {
     top: 20px;
 }
 
-#logo{
-    width:10%;
+#logo {
+    width: 10%;
 }
 
 header {
@@ -128,53 +128,53 @@ header {
 }
 
 #floor-plan-1 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
+    background-color: #EDE6F8;
+    margin: 3% 5% 5% 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #floor-plan-2 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
+    background-color: #EDE6F8;
+    margin: 3% 5% 5% 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #floor-plan-3 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
+    background-color: #EDE6F8;
+    margin: 3% 5% 5% 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #floor-plan-4 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
+    background-color: #EDE6F8;
+    margin: 3% 5% 5% 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 #floor-plan-5 {
-  width: 49%;
-  /* min-width: 320px; */
-  height: 90%;
-  background-color: #EDE6F8;
-  margin: 3% 5% 5% 0;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
+    background-color: #EDE6F8;
+    margin: 3% 5% 5% 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .restroom {
@@ -226,13 +226,14 @@ header {
 
 #chart .wc {
 
-      fill: transparent;
-      stroke: #2FB1F2;
-      stroke-width: 0.5;
+    fill: transparent;
+    stroke: #2FB1F2;
+    stroke-width: 0.5;
 }
+
 .wc_ {
-  transform: rotate(90deg);
-  opacity: 0.1;
+    transform: rotate(90deg);
+    opacity: 0.1;
 }
 
 
@@ -257,6 +258,7 @@ header {
     stroke: transparent;
     stroke-width: 0;
 }
+
 /*
 #chart .washing:hover {
 
@@ -265,12 +267,12 @@ header {
 } */
 
 .usage-box {
-    height:40%;
+    height: 40%;
     width: 100%;
-    margin-top:5%;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .usage {
@@ -286,15 +288,15 @@ header {
 }
 
 .facility-name {
-  width:30%;
-  text-align: center;
+    width: 30%;
+    text-align: center;
 }
 
 .all-box {
-    width:70%;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -361,8 +363,9 @@ header {
     border-radius: 30px;
     margin-top: 2%;
 }
+
 .content {
-/*     position: relative; */
+    /*     position: relative; */
     /*设置可见部分的高度*/
     height: 100%;
     /*随便设置个颜色区分可滚动区域和其他区域*/
@@ -378,11 +381,11 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
     /* justify-content: space-between; */
-  /*overflow:hidden样式可以不写，因为scroll会自动隐藏超出content高度的部分*/
+    /*overflow:hidden样式可以不写，因为scroll会自动隐藏超出content高度的部分*/
 
 }
 
-.rectangle{
+.rectangle {
     position: relative;
     margin-top: 3%;
     max-width: 90%;
@@ -406,11 +409,12 @@ header {
     font-family: 'Roboto', sans-serif;
     float: left;
 }
+
 .rectangle img {
-  position: relative;
-  margin-left: auto;
-  margin-right: 6%;
-  top: 20%;
-  height: 75%;
-  width: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: 6%;
+    top: 20%;
+    height: 75%;
+    width: auto;
 }
