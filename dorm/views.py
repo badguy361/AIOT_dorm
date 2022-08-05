@@ -33,9 +33,9 @@ class FacilitiesViewSet1(viewsets.ModelViewSet):
         queryset = serializers.serialize("json",facilities_firstfloor.objects.all())
         return HttpResponse(queryset)
 
-    def Home(request):
-        template_name = 'dormitory.html'
-        return render(request, template_name)
+    # def Home(request):
+    #     template_name = 'dormitory.html'
+    #     return render(request, template_name)
 
     # def connect(request):
     #     template_name = 'info.html'
@@ -55,9 +55,9 @@ class FacilitiesViewSet2(viewsets.ModelViewSet):
         queryset = serializers.serialize("json",facilities_secondfloor.objects.all())
         return HttpResponse(queryset)
 
-    def Home(request):
-        template_name = 'dormitory.html'
-        return render(request, template_name)
+    # def Home(request):
+    #     template_name = 'dormitory.html'
+    #     return render(request, template_name)
 
     # def connect(request):
     #     template_name = 'info.html'
@@ -77,9 +77,9 @@ class FacilitiesViewSet3(viewsets.ModelViewSet):
         queryset = serializers.serialize("json",facilities_thirdfloor.objects.all())
         return HttpResponse(queryset)
 
-    def Home(request):
-        template_name = 'dormitory.html'
-        return render(request, template_name)
+    # def Home(request):
+    #     template_name = 'dormitory.html'
+    #     return render(request, template_name)
 
     # def connect(request):
     #     template_name = 'info.html'
@@ -122,9 +122,9 @@ class FacilitiesViewSet5(viewsets.ModelViewSet):
         return HttpResponse(queryset)
         # return JsonResponse({f"Date":queryset[0].Date})
 
-    def Home(request):
-        template_name = 'dormitory.html'
-        return render(request, template_name)
+    # def Home(request):
+    #     template_name = 'dormitory.html'
+    #     return render(request, template_name)
 
     # def connect(request):
     #     template_name = 'info.html'
