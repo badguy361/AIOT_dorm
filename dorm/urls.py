@@ -30,9 +30,11 @@ urlpatterns = [
     path('getJsondata3/', views.FacilitiesViewSet3.getJsondata, name='Jsondata'),
 
     path('info4/', views.FacilitiesViewSet4.get, name='dorm'),
-    path('Home/', views.FacilitiesViewSet4.Home, name='Home'),
     path('getJsondata4/', views.FacilitiesViewSet4.getJsondata, name='Jsondata'),
-
+    path('Home/', views.FacilitiesViewSet4.Home, name='Home'),
+    path('feedbacks/', views.FacilitiesViewSet4.feedbacks, name='dorm'),
+    path('connect/', views.FacilitiesViewSet4.connect, name='dorm'),
+    
     path('info5/', views.FacilitiesViewSet5.get, name='dorm'),
     path('getJsondata5/', views.FacilitiesViewSet5.getJsondata, name='Jsondata'),
 ]

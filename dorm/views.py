@@ -103,9 +103,13 @@ class FacilitiesViewSet4(viewsets.ModelViewSet):
         template_name = 'dormitory.html'
         return render(request, template_name)
 
-    # def connect(request):
-    #     template_name = 'info.html'
-    #     return render(request, template_name)
+    def feedbacks(request):
+        template_name = 'form.html'
+        return render(request, template_name)
+
+    def connect(request):
+        template_name = 'info.html'
+        return render(request, template_name)
 
 class FacilitiesViewSet5(viewsets.ModelViewSet):
     # model = facilities
