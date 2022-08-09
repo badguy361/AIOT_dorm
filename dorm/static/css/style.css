@@ -1,7 +1,6 @@
 html,
 body {
     height: 100%;
-
     margin: 0;
 }
 
@@ -11,8 +10,8 @@ img {
     top: 20px;
 }
 
-#logo{
-    width:150px;
+#logo {
+     width:150px;
 }
 
 header {
@@ -45,6 +44,7 @@ header {
     color: #fff;
     text-decoration: none;
 }
+
 
 .text a:hover {
     /* 超連結滑鼠滑過設定*/
@@ -86,7 +86,7 @@ header {
     /* 文字無底線 */
 }
 /*   --------------------------   back-purple    ------------------------------- */
-  .back-purple {
+.back-purple {
     width: 90%;
     height: 88%;
     background-color: #5955b3;
@@ -98,9 +98,9 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-  }
+}
 /*   ----------------------------   section    --------------------------------- */
-  .section {
+.section {
     width: 41%;
     height: 90%;
     background-color: white;
@@ -111,23 +111,72 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
 
-    }
+}
+/*   ------------------------------   F    ---------------------------------- */
+.F {
+    font-family: "微軟正黑體";
+    width: 80%;
+    height: 5%;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background-color: #5955b3;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 30px;
+    margin-top: 2%;
+}
 /*   ---------------------------   floor-plan    ------------------------------- */
-    .floor-plan {
-        width: 49%;
-        /* min-width: 320px; */
-        height: 90%;
-        background-color: #EDE6F8;
-        margin: 3% 5% 5% 0;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-    /*     float: right; */
-    }
+#floor-plan-1 {
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
+    background-color: #EDE6F8;
+    margin: 3% 5% 5% 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 
+#floor-plan-2 {
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
+    background-color: #EDE6F8;
+    margin: 3% 5% 5% 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 
+#floor-plan-3 {
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
+    background-color: #EDE6F8;
+    margin: 3% 5% 5% 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 
+#floor-plan-4 {
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
+    background-color: #EDE6F8;
+    margin: 3% 5% 5% 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 
-/*   ------------------------   floor-plan detail-1    ----------------------------- */
+#floor-plan-5 {
+    width: 49%;
+    /* min-width: 320px; */
+    height: 90%;
+    background-color: #EDE6F8;
+    margin: 3% 5% 5% 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+/*   -------------------------   floor-plan detail    ------------------------------ */
 .restroom {
     background-color: #EDE6F8;
     width: 80%;
@@ -136,7 +185,6 @@ header {
     margin-left: auto;
     margin-top: 2%;
 }
-
 
 #chart .bath {
     fill: transparent;
@@ -154,9 +202,9 @@ header {
     stroke-width: 0.5;
 }
 
-#chart .disabled:hover {
+/* #chart .disabled:hover {
     opacity: 0.7;
-}
+} */
 
 #chart .washing {
     fill: #faf4f1;
@@ -178,13 +226,14 @@ header {
 
 #chart .wc {
 
-      fill: transparent;
-      stroke: #2FB1F2;
-      stroke-width: 0.5;
+    fill: transparent;
+    stroke: #2FB1F2;
+    stroke-width: 0.5;
 }
+
 .wc_ {
-  transform: rotate(90deg);
-  opacity: 0.1;
+    transform: rotate(90deg);
+    opacity: 0.1;
 }
 
 
@@ -209,35 +258,23 @@ header {
     stroke: transparent;
     stroke-width: 0;
 }
+
 /*
 #chart .washing:hover {
 
     fill: #FAF4F1;
     pointer-events: all;
 } */
-/*   -----------------------------   floor-plan --------------------------------- */
-.floor-plan h1 {
-    font-family: "微軟正黑體";
-    width: 80%;
-    height: 5%;
-    font-size: 24px;
-    color: white;
-    text-align: center;
-    background-color: #5955b3;
-    margin-right: 10%;
-    margin-left: 10%;
-    border-radius: 30px;
-    margin-top: 2%;
-}
-/*   ------------------------   floor-plan detail-2   ----------------------------- */
+
 .usage-box {
-    height:40%;
+    height: 40%;
     width: 100%;
-    margin-top:5%;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 .usage {
     width: 67%;
     height: 12%;
@@ -249,16 +286,17 @@ header {
     display: flex;
     justify-content: flex-start;
 }
+
 .facility-name {
-  width:30%;
-  text-align: center;
+    width: 30%;
+    text-align: center;
 }
 
 .all-box {
-    width:70%;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -267,7 +305,7 @@ header {
     height: 23px;
     width: 23px;
     border-color: #5D626F;
-    background-color: #609755;
+    background-color: #0B9A48;
     border-width: 2px;
     border-radius: 8px;
 }
@@ -314,19 +352,20 @@ header {
 /*   --------------------------   content(floor) ------------------------------- */
 .content h1 {
     font-family: "微軟正黑體";
-    width: 90%;
+    width: 80%;
     height: 60%;
     font-size: 24px;
     color: #5955b3;
     text-align: center;
     background-color: #EDE6F8;
     margin-right: 5%;
-    margin-left: 0%;
+    margin-left: 7.5%;
     border-radius: 30px;
     margin-top: 2%;
 }
+
 .content {
-/*     position: relative; */
+    /*     position: relative; */
     /*设置可见部分的高度*/
     height: 100%;
     /*随便设置个颜色区分可滚动区域和其他区域*/
@@ -342,11 +381,12 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
     /* justify-content: space-between; */
-  /*overflow:hidden样式可以不写，因为scroll会自动隐藏超出content高度的部分*/
+    /*overflow:hidden样式可以不写，因为scroll会自动隐藏超出content高度的部分*/
 
 }
-/*   ------------------------   content(floor)-detail ---------------------------- */
 
+
+/*   ------------------------   content(floor)-detail ---------------------------- */
 .content p {
     text-decoration: none;
     text-align: left;
@@ -358,6 +398,7 @@ header {
     font-family: 'Roboto', sans-serif;
     float: left;
 }
+
 .floor-box{
   margin: 0% 30px 0% -30px;
   height: 90%;
@@ -368,14 +409,14 @@ header {
 /*   background: #f1f2c2; */
 }
 .rectangle img {
-  position: relative;
-  margin-left: auto;
-  margin-right: 6%;
-  top: 20%;
-  height: 75%;
-  width: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: 6%;
+    top: 20%;
+    height: 75%;
+    width: auto;
 }
-.rectangle{
+.rectangle {
     position: relative;
     margin-top: 3%;
     max-width: 90%;
@@ -387,99 +428,152 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-  
 }
-
 /*   ------------------------------   RWD    ----------------------------------- */
 
 /* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
+/* [class*="col-"] {
+    width: 100%;
+} */
+
 /* For dest-book: */
 @media only screen and (min-height: 1000px) and (max-width: 1960px) {
-  #imag-4 {display:none;}
+    #imag-4 {
+        display: none;
+    }
 }
-@media only screen and (min-height: 1000px)  and (max-width: 1440px) {
-  #imag-3 {display:none;}
+
+@media only screen and (min-height: 1000px) and (max-width: 1440px) {
+    #imag-3 {
+        display: none;
+    }
 }
-@media only screen and (min-height: 1000px)  and (max-width: 970px) {
-  #imag-2 {display:none;}
-  .content p {margin-right:0px;}
+
+@media only screen and (min-height: 1000px) and (max-width: 970px) {
+    #imag-2 {
+        display: none;
+    }
+
+    .content p {
+        margin-right: 0px;
+    }
 }
+
 /* For Tablets */
-@media only screen and (min-height: 750px)  and (max-width: 1480px) {
-  #imag-4 {display:none;}
+@media only screen and (min-height: 750px) and (max-width: 1480px) {
+    #imag-4 {
+        display: none;
+    }
 }
-@media only screen and (min-height: 750px)  and (max-width: 1000px) {
-  #imag-3 {display:none;}
+
+@media only screen and (min-height: 750px) and (max-width: 1000px) {
+    #imag-3 {
+        display: none;
+    }
 }
+
 /* For mobile phones: */
-@media only screen and (max-height: 600px){
-  #imag-4 {display:none;}
+@media only screen and (max-height: 600px) {
+    #imag-4 {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 650px) {
-  /* For tablets: */
-  .col-p-1 {width: 8.33%;}
-  .col-p-2 {width: 16.66%;}
-  .col-p-3 {width: 25%;}
-  .col-p-4 {width: 33.33%;}
-  .col-p-5 {width: 41.66%;}
-  .col-p-6 {width: 50%;}
-  .col-p-7 {width: 58.33%;}
-  .col-p-8 {width: 66.66%;}
-  .col-p-9 {width: 75%;}
-  .col-p-10 {width: 83.33%;}
-  .col-p-11 {width: 91.66%;}
-  .col-p-12 {width: 100%;}
-  .column-p-box {flex-direction: column;}
-  .section{
-    width: auto;
-    height: 18%;
-    margin: 2% 3% 0% 3%;
-    border-radius:  30px;
-    flex-direction: row;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content:space-around;
-  }
-  .back-purple{margin-top: 3.75%;}
-  .content{
-    width: auto;
-     margin: 0% 0% 0% 0%;
-     border-radius:  30px;
-     background: #f2f2f2;
-  }
-  .floor-plan{
-      width: auto;
-      /* min-width: 320px; */
-      height: 77%;
-      margin: 2% 5% 6% 5%;
-      border-radius: 30px;
-  }
-  .rectangle img {display:none;}
-  .content p {font-size: 5vw;transform: translateY(50%)}
-  .rectangle {
-    height:70%;width:15%;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content:space-around;
-  }
-  .floor-box {
-    margin: 0% 30px 0% -30px;
-    height: 50%;
-    width: auto;
-    margin-bottom: 0%;
-    
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content:space-around;
-    background: #f1f2c2;
-  }
-    
+    /* For tablets: */
+
+    .section {
+        width: auto;
+        height: 18%;
+        margin: 2% 3% 0% 3%;
+        border-radius: 30px;
+        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .back-purple {
+	  margin-top: 3.75%;
+	  flex-direction: column;
+        
+    }
+
+    .content {
+        width: auto;
+        margin: 0% 0% 0% 0%;
+        border-radius: 30px;
+        background: #f2f2f2;
+    }
+
+    #floor-plan-1 { 
+        width: auto;
+        /* min-width: 320px; */
+        height: 77%;
+        margin: 2% 5% 6% 5%;
+        border-radius: 30px;
+    }
+    #floor-plan-2 { 
+        width: auto;
+        /* min-width: 320px; */
+        height: 77%;
+        margin: 2% 5% 6% 5%;
+        border-radius: 30px;
+    }
+    #floor-plan-3 { 
+        width: auto;
+        /* min-width: 320px; */
+        height: 77%;
+        margin: 2% 5% 6% 5%;
+        border-radius: 30px;
+    }
+    #floor-plan-4 { 
+        width: auto;
+        /* min-width: 320px; */
+        height: 77%;
+        margin: 2% 5% 6% 5%;
+        border-radius: 30px;
+    }
+
+    #floor-plan-5 { 
+        width: auto;
+        /* min-width: 320px; */
+        height: 77%;
+        margin: 2% 5% 6% 5%;
+        border-radius: 30px;
+    }
+
+    .rectangle img {
+        display: none;
+    }
+
+    .content p {
+        font-size: 5vw;
+        transform: translateY(50%)
+    }
+
+    .rectangle {
+        height: 70%;
+        width: 15%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .floor-box {
+        margin: 0% 30px 0% -30px;
+        height: 50%;
+        width: auto;
+        margin-bottom: 0%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        background: #f1f2c2;
+    }
+
+
 }
