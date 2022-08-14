@@ -56,10 +56,10 @@ async function myAsyncFunction() {
                 f5shower_5_usage = data[11]["fields"]['facilities_useage'];
                 f5shower_6_usage = data[12]["fields"]['facilities_useage'];
 
-                console.log("washingMachine_1_usage", washingMachine_1_usage);
-                console.log(shower_1_usage);
-                console.log(disabled_1_usage);
-                console.log(dryerMachine_1_usage);
+                // console.log("washingMachine_1_usage", washingMachine_1_usage);
+                // console.log(shower_1_usage);
+                // console.log(disabled_1_usage);
+                // console.log(dryerMachine_1_usage);
 
                 //下面的顏色動畫確定可以
                 if (parseInt(f5washingMachine_box1_usage) > 0) {

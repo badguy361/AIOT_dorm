@@ -40,22 +40,26 @@ async function myAsyncFunction() {
             })
             .then((data) => {
                 //這部分不太確定哪個欄位從哪裡讀資料
-                washingMachine_box1_usage = data[0]["fields"]['battery'];
-                washingMachine_1_usage = data[0]["fields"]['battery'];
-                shower_box1_usage = data[1]["fields"]['battery'];
-                shower_1_usage = data[1]["fields"]['battery'];
-                disabled_box1_usage = data[2]["fields"]['battery'];
-                disabled_1_usage = data[2]["fields"]['battery'];
-                dryerMachine_box1_usage = data[3]["fields"]['battery'];
-                dryerMachine_1_usage = data[3]["fields"]['battery'];
+                f1dryerMachine_1_usage = data[0]["fields"]['facilities_useage'];
+                f1washingMachine_box1_usage = data[1]["fields"]['facilities_useage'];
+                f1washingMachine_box2_usage = data[2]["fields"]['facilities_useage'];
+                f1disabled_1_usage = data[3]["fields"]['facilities_useage'];
+                f1wc_1_usage = data[4]["fields"]['facilities_useage'];
+                f1wc_2_usage = data[5]["fields"]['facilities_useage'];
+                f1wc_3_usage = data[6]["fields"]['facilities_useage'];
+                f1shower_1_usage = data[7]["fields"]['facilities_useage'];
+                f1shower_2_usage = data[8]["fields"]['facilities_useage'];
+                f1shower_3_usage = data[9]["fields"]['facilities_useage'];
+                f1shower_4_usage = data[10]["fields"]['facilities_useage'];
+                f1shower_5_usage = data[11]["fields"]['facilities_useage'];
 
-                console.log("washingMachine_1_usage", washingMachine_1_usage);
-                console.log(shower_1_usage);
-                console.log(disabled_1_usage);
-                console.log(dryerMachine_1_usage);
+                // console.log("washingMachine_1_usage", washingMachine_1_usage);
+                // console.log(shower_1_usage);
+                // console.log(disabled_1_usage);
+                // console.log(dryerMachine_1_usage);
 
                 //下面的顏色動畫確定可以
-                if (parseInt(f1washingMachine_box1_usage) > 10) {
+                if (parseInt(f1washingMachine_box1_usage) > 0) {
                     f1washingMachine_box1.style.background = 'yellow';
                     f1washingMachine_1.style.fill = '#4071F5';
                 } else {
@@ -63,7 +67,7 @@ async function myAsyncFunction() {
                     f1washingMachine_box1.style.background = '#609755';
                 }
 
-                if (parseInt(f1washingMachine_box2_usage) > 10) {
+                if (parseInt(f1washingMachine_box2_usage) > 0) {
                     f1washingMachine_box2.style.background = 'yellow';
                     f1washingMachine_2.style.fill = '#4071F5';
                 } else {
@@ -71,7 +75,7 @@ async function myAsyncFunction() {
                     f1washingMachine_box2.style.background = '#609755';
                 }
 
-                if (parseInt(f1shower_1_usage) > 10) {
+                if (parseInt(f1shower_1_usage) > 0) {
                     f1shower_1.style.opacity = 1;
                     f1shower_box1.style.background = 'yellow';
                 } else {
@@ -79,7 +83,7 @@ async function myAsyncFunction() {
                     f1shower_box1.style.background = '#609755';
                 }
 
-                if (parseInt(f1shower_2_usage) > 10) {
+                if (parseInt(f1shower_2_usage) > 0) {
                     f1shower_2.style.opacity = 1;
                     f1shower_box2.style.background = 'yellow';
                 } else {
@@ -87,21 +91,21 @@ async function myAsyncFunction() {
                     f1shower_box2.style.background = '#609755';
                 }
 
-                if (parseInt(f1shower_3_usage) > 10) {
+                if (parseInt(f1shower_3_usage) > 0) {
                     f1shower_3.style.opacity = 1;
                     f1shower_box3.style.background = 'yellow';
                 } else {
                     f1shower_3.style.opacity = 0.1;
                     f1shower_box3.style.background = '#609755';
                 }
-                if (parseInt(f1shower_4_usage) > 10) {
+                if (parseInt(f1shower_4_usage) > 0) {
                     f1shower_4.style.opacity = 1;
                     f1shower_box4.style.background = 'yellow';
                 } else {
                     f1shower_4.style.opacity = 0.1;
                     f1shower_box4.style.background = '#609755';
                 }
-                if (parseInt(f1shower_5_usage) > 10) {
+                if (parseInt(f1shower_5_usage) > 0) {
                     f1shower_5.style.opacity = 1;
                     f1shower_box5.style.background = 'yellow';
                 } else {
@@ -109,7 +113,7 @@ async function myAsyncFunction() {
                     f1shower_box5.style.background = '#609755';
                 }
 
-                if (parseInt(f1disabled_1_usage) > 10) {
+                if (parseInt(f1disabled_1_usage) > 0) {
                     f1disabled_1.style.opacity = 1;
                     f1disabled_box1.style.background = 'yellow';
                 } else {
@@ -117,24 +121,24 @@ async function myAsyncFunction() {
                     f1disabled_box1.style.background = '#609755';
                 }
 
-                if (parseInt(f1dryerMachine_1_usage) > 10) {
+                if (parseInt(f1dryerMachine_1_usage) > 0) {
                     f1dryerMachine_1.style.animation = 'dash 1.4s linear infinite';
                     f1dryerMachine_box1.style.background = 'yellow';
                 } else {
                     f1dryerMachine_box1.style.background = '#609755';
                 }
 
-                if (parseInt(f1wc_1_usage) > 10) {
+                if (parseInt(f1wc_1_usage) > 0) {
                     f1wc_1.style.opacity = 0.8;
                 } else {
                     f1wc_1.style.opacity = 0.1;
                 }
-                if (parseInt(f1wc_2_usage) > 10) {
+                if (parseInt(f1wc_2_usage) > 0) {
                     f1wc_2.style.opacity = 0.8;
                 } else {
                     f1wc_2.style.opacity = 0.1;
                 }
-                if (parseInt(f1wc_3_usage) > 10) {
+                if (parseInt(f1wc_3_usage) > 0) {
                     f1wc_3.style.opacity = 0.8;
                 } else {
                     f1wc_3.style.opacity = 0.1;
