@@ -6,30 +6,30 @@ function delay(n) {
 
 async function myAsyncFunction() {
     while (1) {
-      const f1washingMachine_box1 = document.getElementById('wash-box-1-1');
-      const f1washingMachine_1 = document.getElementById('washingMachine-1-1');
-      const f1washingMachine_box2 = document.getElementById('wash-box-1-2');
-      const f1washingMachine_2 = document.getElementById('washingMachine-1-2');
+        const f1washingMachine_box1 = document.getElementById('wash-box-1-1');
+        const f1washingMachine_1 = document.getElementById('washingMachine-1-1');
+        const f1washingMachine_box2 = document.getElementById('wash-box-1-2');
+        const f1washingMachine_2 = document.getElementById('washingMachine-1-2');
 
-      const f1shower_box1 = document.getElementById('bath-box-1-1');
-      const f1shower_1 = document.getElementById('bath-1-1');
-      const f1shower_box2 = document.getElementById('bath-box-1-2');
-      const f1shower_2 = document.getElementById('bath-1-2');
-      const f1shower_box3 = document.getElementById('bath-box-1-3');
-      const f1shower_3 = document.getElementById('bath-1-3');
-      const f1shower_box4 = document.getElementById('bath-box-1-4');
-      const f1shower_4 = document.getElementById('bath-1-4');
-      const f1shower_box5 = document.getElementById('bath-box-1-5');
-      const f1shower_5 = document.getElementById('bath-1-5');
+        const f1shower_box1 = document.getElementById('bath-box-1-1');
+        const f1shower_1 = document.getElementById('bath-1-1');
+        const f1shower_box2 = document.getElementById('bath-box-1-2');
+        const f1shower_2 = document.getElementById('bath-1-2');
+        const f1shower_box3 = document.getElementById('bath-box-1-3');
+        const f1shower_3 = document.getElementById('bath-1-3');
+        const f1shower_box4 = document.getElementById('bath-box-1-4');
+        const f1shower_4 = document.getElementById('bath-1-4');
+        const f1shower_box5 = document.getElementById('bath-box-1-5');
+        const f1shower_5 = document.getElementById('bath-1-5');
 
-      const f1disabled_box1 = document.getElementById('dis-box-1-1');
-      const f1disabled_1 = document.getElementById('disabled-1-1');
-      const f1dryerMachine_box1 = document.getElementById('dry-box-1-1');
-      const f1dryerMachine_1 = document.getElementById('dryerMachine-1-1');
+        const f1disabled_box1 = document.getElementById('dis-box-1-1');
+        const f1disabled_1 = document.getElementById('disabled-1-1');
+        const f1dryerMachine_box1 = document.getElementById('dry-box-1-1');
+        const f1dryerMachine_1 = document.getElementById('dryerMachine-1-1');
 
-      const f1wc_1 = document.getElementById('wc-1-1');
-      const f1wc_2 = document.getElementById('wc-1-2');
-      const f1wc_3 = document.getElementById('wc-1-3');
+        const f1wc_1 = document.getElementById('wc-1-1');
+        const f1wc_2 = document.getElementById('wc-1-2');
+        const f1wc_3 = document.getElementById('wc-1-3');
 
 
         console.log("start to fetch data");
@@ -39,7 +39,7 @@ async function myAsyncFunction() {
                 return response.json();
             })
             .then((data) => {
-              //這部分不太確定哪個欄位從哪裡讀資料
+                //這部分不太確定哪個欄位從哪裡讀資料
                 washingMachine_box1_usage = data[0]["fields"]['battery'];
                 washingMachine_1_usage = data[0]["fields"]['battery'];
                 shower_box1_usage = data[1]["fields"]['battery'];
@@ -49,7 +49,7 @@ async function myAsyncFunction() {
                 dryerMachine_box1_usage = data[3]["fields"]['battery'];
                 dryerMachine_1_usage = data[3]["fields"]['battery'];
 
-                console.log("washingMachine_1_usage",washingMachine_1_usage);
+                console.log("washingMachine_1_usage", washingMachine_1_usage);
                 console.log(shower_1_usage);
                 console.log(disabled_1_usage);
                 console.log(dryerMachine_1_usage);
