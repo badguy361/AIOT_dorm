@@ -1,83 +1,86 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
-	{% load static %}
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>雙欄式網頁版型</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-	<link href="{% static '/css/info_style.css' %}" rel="stylesheet" type="text/css" />
+  {% load static %}
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>雙欄式網頁版型</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="{% static '/css/info_style.css' %}" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="info_style.css">
 </head>
 
 <body background="https://i.imgur.com/G4Fa14Y.png">
-	<header>
-		<img src='http://in.ncu.edu.tw/~ncu7221/OSDS/images/logo.png' id='logo' alt="My test image">
-		<div class='text'>
-			<a href="dormitory.html" target="_self">宿舍通</a>
-		</div>
-		<nav class="navigation">
-			<ul>
-				<li><a href="product.html" target="_self">產品介紹</a></li>
-				<li><a href="form.html" target="_self">回饋表單</a></li>
-				<li><a href="info.html">聯絡資訊</a></li>
-			</ul>
-		</nav>
-	</header>
+  <header>
+    <img src='http://in.ncu.edu.tw/~ncu7221/OSDS/images/logo.png' id='logo' alt="My test image">
+    <div class='text'>
+      <a href="/dorm/Home" target="_self">宿舍通</a>
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="product.html" target="_self">產品介紹</a></li>
+        <li><a href="/dorm/feedbacks" target="_self">回饋表單</a></li>
+        <li><a href="/dorm/connect">聯絡資訊</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
 
-<div id="back-purple">
-<div id="gray">
-	<div>
-    <p id=w1>聯絡我們</p>
-    <p id=w2>電話:  03-4262419 / 03-4227151 #34747 </p>
-    <p id=w2>Email: info@e-dream.tw</p>
-    <p id=w2>地址</p>
-    <p id=w2>MON-FRI 09:00 - 17:00</p>
-    <br>
-    <img id=pic src='https://i.imgur.com/mmeZTgw.png' id='logo' alt="My test image">
-   </div> 
-  
-</div>
+  <div id="back-purple">
+    <div id="gray">
+      <div>
+        <p id=w1>聯絡我們</p>
+        <p id=w2>電話: 03-4262419 / 03-4227151 #34747 </p>
+        <p id=w2>Email: info@e-dream.tw</p>
+        <p id=w2>地址</p>
+        <p id=w2>MON-FRI 09:00 - 17:00</p>
+        <br>
+        <img id=pic src='https://i.imgur.com/mmeZTgw.png' id='logo' alt="My test image">
+      </div>
 
-<div class="container">
-	<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSehWQqqqQ7lL9NbjdYnKBEt2mJH8TxQUC3xtEHU6pqnHe-1AA/formResponse" method = "post" >
-		<div class="row">
-		  <div class="col-25">
-			<label for="fname">姓名</label>
-		  </div>
-		  <div class="col-75">
-			<input type="text" id="name" name="entry.465729818"  placeholder="您的名字..">
-		  </div>
-		</div>
-		<div class="row">
-		  <div class="col-25">
-			<label for="lname">電子郵件</label>
-		  </div>
-		  <div class="col-75">
-			<input type="text" id="email" name="entry.1808097327"  placeholder="您的信箱..">
-		  </div>
-		</div>
-	  
-		<div class="row">
-		  <div class="col-25">
-			<label for="subject">詳細內容</label>
-		  </div>
-		  <div class="col-75">
-			<textarea id="subject" name="entry.1018556506" placeholder="您想連絡的事項.." style="height:200px"></textarea>
-		  </div>
-		</div>
-		<br>
-		<div class="row">
-		  <input type="submit" value="傳送">
-		</div>
-		</form>
-</div>
+    </div>
 
-</div> <!--back purple end here -->
+    <div class="container">
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSehWQqqqQ7lL9NbjdYnKBEt2mJH8TxQUC3xtEHU6pqnHe-1AA/formResponse"
+        method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">姓名</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="entry.465729818" placeholder="您的名字..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">電子郵件</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" name="entry.1808097327" placeholder="您的信箱..">
+          </div>
+        </div>
 
-    <script src="{% static '/javascript/dormitory.js' %}"></script>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">詳細內容</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="entry.1018556506" placeholder="您想連絡的事項.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="傳送">
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!--back purple end here -->
+
+  <script src="{% static '/javascript/dormitory.js' %}"></script>
 
 
 </body>
