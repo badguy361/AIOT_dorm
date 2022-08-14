@@ -218,10 +218,9 @@ header {
     stroke-width: 0.6;
 }
 
-#dryerMachine-1 {
+.hot-wind {
     stroke-width: 3;
     opacity: 0.15;
-    /* animation: dash 1.4s linear infinite; */
 }
 
 #chart .wc {
@@ -233,7 +232,6 @@ header {
 
 .wc_ {
     transform: rotate(90deg);
-    opacity: 0.1;
 }
 
 
@@ -252,17 +250,16 @@ header {
     opacity: 1;
 } */
 
-#washing-1,
-#washing-2 {
+.washing-move{
     fill: #FAF4F1;
     stroke: transparent;
     stroke-width: 0;
 }
 
-/*
-#chart .washing:hover {
 
-    fill: #FAF4F1;
+/* #washingMachine-1:hover {
+
+    fill: blue;
     pointer-events: all;
 } */
 
@@ -308,46 +305,6 @@ header {
     background-color: #0B9A48;
     border-width: 2px;
     border-radius: 8px;
-}
-
-#wash-box-1:hover {
-    background-color: #CC3014;
-}
-
-#wash-box-2:hover {
-    background-color: #CC3014;
-}
-
-#dry-box-1:hover {
-    background-color: #CC3014;
-}
-
-#dis-box-1:hover {
-    background-color: #CC3014;
-}
-
-#bath-box-1:hover {
-    background-color: #CC3014;
-}
-
-#bath-box-2:hover {
-    background-color: #CC3014;
-}
-
-#bath-box-3:hover {
-    background-color: #CC3014;
-}
-
-#bath-box-4:hover {
-    background-color: #CC3014;
-}
-
-#bath-box-5:hover {
-    background-color: #CC3014;
-}
-
-#bath-box-6:hover {
-    background-color: #CC3014;
 }
 
 .content h1 {
