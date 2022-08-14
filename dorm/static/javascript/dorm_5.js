@@ -35,21 +35,26 @@ async function myAsyncFunction() {
 
 
         console.log("start to fetch data");
-        fetch('http://127.0.0.1:8000/dorm/getJsondata1')
+        fetch('http://127.0.0.1:8000/dorm/getJsondata5')
             .then((response) => {
                 console.log("response.json()", response);
                 return response.json();
             })
             .then((data) => {
                 //這部分不太確定哪個欄位從哪裡讀資料
-                washingMachine_box1_usage = data[0]["fields"]['battery'];
-                washingMachine_1_usage = data[0]["fields"]['battery'];
-                shower_box1_usage = data[1]["fields"]['battery'];
-                shower_1_usage = data[1]["fields"]['battery'];
-                disabled_box1_usage = data[2]["fields"]['battery'];
-                disabled_1_usage = data[2]["fields"]['battery'];
-                dryerMachine_box1_usage = data[3]["fields"]['battery'];
-                dryerMachine_1_usage = data[3]["fields"]['battery'];
+                f5dryerMachine_1_usage = data[0]["fields"]['facilities_useage'];
+                f5washingMachine_box1_usage = data[1]["fields"]['facilities_useage'];
+                f5washingMachine_box2_usage = data[2]["fields"]['facilities_useage'];
+                f5disabled_1_usage = data[3]["fields"]['facilities_useage'];
+                f5wc_1_usage = data[4]["fields"]['facilities_useage'];
+                f5wc_2_usage = data[5]["fields"]['facilities_useage'];
+                f5wc_3_usage = data[6]["fields"]['facilities_useage'];
+                f5shower_1_usage = data[7]["fields"]['facilities_useage'];
+                f5shower_2_usage = data[8]["fields"]['facilities_useage'];
+                f5shower_3_usage = data[9]["fields"]['facilities_useage'];
+                f5shower_4_usage = data[10]["fields"]['facilities_useage'];
+                f5shower_5_usage = data[11]["fields"]['facilities_useage'];
+                f5shower_6_usage = data[12]["fields"]['facilities_useage'];
 
                 console.log("washingMachine_1_usage", washingMachine_1_usage);
                 console.log(shower_1_usage);
@@ -57,7 +62,7 @@ async function myAsyncFunction() {
                 console.log(dryerMachine_1_usage);
 
                 //下面的顏色動畫確定可以
-                if (parseInt(f5washingMachine_box1_usage) > 10) {
+                if (parseInt(f5washingMachine_box1_usage) > 0) {
                     f5washingMachine_box1.style.background = 'yellow';
                     f5washingMachine_1.style.fill = '#4071F5';
                 } else {
@@ -65,7 +70,7 @@ async function myAsyncFunction() {
                     f5washingMachine_box1.style.background = '#609755';
                 }
 
-                if (parseInt(f5washingMachine_box2_usage) > 10) {
+                if (parseInt(f5washingMachine_box2_usage) > 0) {
                     f5washingMachine_box2.style.background = 'yellow';
                     f5washingMachine_2.style.fill = '#4071F5';
                 } else {
@@ -73,7 +78,7 @@ async function myAsyncFunction() {
                     f5washingMachine_box2.style.background = '#609755';
                 }
 
-                if (parseInt(f5shower_1_usage) > 10) {
+                if (parseInt(f5shower_1_usage) > 0) {
                     f5shower_1.style.opacity = 1;
                     f5shower_box1.style.background = 'yellow';
                 } else {
@@ -81,7 +86,7 @@ async function myAsyncFunction() {
                     f5shower_box1.style.background = '#609755';
                 }
 
-                if (parseInt(f5shower_2_usage) > 10) {
+                if (parseInt(f5shower_2_usage) > 0) {
                     f5shower_2.style.opacity = 1;
                     f5shower_box2.style.background = 'yellow';
                 } else {
@@ -89,35 +94,35 @@ async function myAsyncFunction() {
                     f5shower_box2.style.background = '#609755';
                 }
 
-                if (parseInt(f5shower_3_usage) > 10) {
+                if (parseInt(f5shower_3_usage) > 0) {
                     f5shower_3.style.opacity = 1;
                     f5shower_box3.style.background = 'yellow';
                 } else {
                     f5shower_3.style.opacity = 0.1;
                     f5shower_box3.style.background = '#609755';
                 }
-                if (parseInt(f5shower_4_usage) > 10) {
+                if (parseInt(f5shower_4_usage) > 0) {
                     f5shower_4.style.opacity = 1;
                     f5shower_box4.style.background = 'yellow';
                 } else {
                     f5shower_4.style.opacity = 0.1;
                     f5shower_box4.style.background = '#609755';
                 }
-                if (parseInt(f5shower_5_usage) > 10) {
+                if (parseInt(f5shower_5_usage) > 0) {
                     f5shower_5.style.opacity = 1;
                     f5shower_box5.style.background = 'yellow';
                 } else {
                     f5shower_5.style.opacity = 0.1;
                     f5shower_box5.style.background = '#609755';
                 }
-                if (parseInt(f5shower_6_usage) > 10) {
+                if (parseInt(f5shower_6_usage) > 0) {
                     f5shower_6.style.opacity = 1;
                     f5shower_box6.style.background = 'yellow';
                 } else {
                     f5shower_6.style.opacity = 0.1;
                     f5shower_box6.style.background = '#609755';
                 }
-                if (parseInt(f5disabled_1_usage) > 10) {
+                if (parseInt(f5disabled_1_usage) > 0) {
                     f5disabled_1.style.opacity = 1;
                     f5disabled_box1.style.background = 'yellow';
                 } else {
@@ -125,24 +130,24 @@ async function myAsyncFunction() {
                     f5disabled_box1.style.background = '#609755';
                 }
 
-                if (parseInt(f5dryerMachine_1_usage) > 10) {
+                if (parseInt(f5dryerMachine_1_usage) > 0) {
                     f5dryerMachine_1.style.animation = 'dash 1.4s linear infinite';
                     f5dryerMachine_box1.style.background = 'yellow';
                 } else {
                     f5dryerMachine_box1.style.background = '#609755';
                 }
 
-                if (parseInt(f5wc_1_usage) > 10) {
+                if (parseInt(f5wc_1_usage) > 0) {
                     f5wc_1.style.opacity = 0.8;
                 } else {
                     f5wc_1.style.opacity = 0.1;
                 }
-                if (parseInt(f5wc_2_usage) > 10) {
+                if (parseInt(f5wc_2_usage) > 0) {
                     f5wc_2.style.opacity = 0.8;
                 } else {
                     f5wc_2.style.opacity = 0.1;
                 }
-                if (parseInt(f5wc_3_usage) > 10) {
+                if (parseInt(f5wc_3_usage) > 0) {
                     f5wc_3.style.opacity = 0.8;
                 } else {
                     f5wc_3.style.opacity = 0.1;
