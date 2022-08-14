@@ -1,6 +1,6 @@
 import paho.mqtt.properties as properties
 import paho.mqtt.client as mqtt
-
+ 
 
 class IdeaSkyMQTTSubscriber:
     def __init__(self, scope, username, password, handler) -> None:
