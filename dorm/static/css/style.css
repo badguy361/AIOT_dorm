@@ -87,7 +87,7 @@ header {
     /* 文字無底線 */
 }
 
-#back-purple {
+.back-purple {
     width: 90%;
     height: 88%;
     background-color: #5955b3;
@@ -101,7 +101,7 @@ header {
     flex-wrap: nowrap;
 }
 
-#section {
+.section {
     width: 41%;
     height: 90%;
     background-color: white;
@@ -250,7 +250,7 @@ header {
     opacity: 1;
 } */
 
-.washing-move{
+.washing-move {
     fill: #FAF4F1;
     stroke: transparent;
     stroke-width: 0;
@@ -342,6 +342,36 @@ header {
 
 }
 
+.content p {
+    text-decoration: none;
+    text-align: left;
+    position: relative;
+    margin-top: 0%;
+    margin-left: 2%;
+    font-size: 9vh;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+}
+
+.floor-box {
+    margin: 0% 30px 0% -30px;
+    height: 90%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /*   background: #f1f2c2; */
+}
+
+.rectangle img {
+    position: relative;
+    margin-left: auto;
+    margin-right: 6%;
+    top: 20%;
+    height: 75%;
+    width: auto;
+}
+
 .rectangle {
     position: relative;
     margin-top: 3%;
@@ -354,26 +384,6 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
-
-.content p {
-    text-decoration: none;
-    text-align: left;
-    position: relative;
-    margin-top: 0%;
-    margin-left: 2%;
-    font-size: 100px;
-    font-family: 'Roboto', sans-serif;
-    float: left;
-}
-
-.rectangle img {
-    position: relative;
-    margin-left: auto;
-    margin-right: 6%;
-    top: 20%;
-    height: 75%;
-    width: auto;
 }
 
 /*   ------------------------------   RWD    ----------------------------------- */
@@ -405,6 +415,129 @@ header {
         margin-right: 0px;
     }
 }
+
+/* For Tablets */
+@media only screen and (min-height: 750px) and (max-width: 1480px) {
+    #imag-4 {
+        display: none;
+    }
+}
+
+@media only screen and (min-height: 750px) and (max-width: 1000px) {
+    #imag-3 {
+        display: none;
+    }
+}
+
+/* For mobile phones: */
+@media only screen and (max-height: 600px) {
+    #imag-4 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    /* For tablets: */
+
+    .section {
+        width: auto;
+        height: 18%;
+        margin: 2% 3% 0% 3%;
+        border-radius: 30px;
+        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .back-purple {
+        margin-top: 3.75%;
+        flex-direction: column;
+
+    }
+
+    .content {
+        width: auto;
+        margin: 0% 0% 0% 0%;
+        border-radius: 30px;
+        background: #f2f2f2;
+    }
+
+    #floor-plan-1 {
+        width: auto;
+        /* min-width: 320px; */
+        height: 77%;
+        margin: 2% 5% 6% 5%;
+        border-radius: 30px;
+    }
+
+    #floor-plan-2 {
+        width: auto;
+        /* min-width: 320px; */
+        height: 77%;
+        margin: 2% 5% 6% 5%;
+        border-radius: 30px;
+    }
+
+    #floor-plan-3 {
+        width: auto;
+        /* min-width: 320px; */
+        height: 77%;
+        margin: 2% 5% 6% 5%;
+        border-radius: 30px;
+    }
+
+    #floor-plan-4 {
+        width: auto;
+        /* min-width: 320px; */
+        height: 77%;
+        margin: 2% 5% 6% 5%;
+        border-radius: 30px;
+    }
+
+    #floor-plan-5 {
+        width: auto;
+        /* min-width: 320px; */
+        height: 77%;
+        margin: 2% 5% 6% 5%;
+        border-radius: 30px;
+    }
+
+    .rectangle img {
+        display: none;
+    }
+
+    .content p {
+        font-size: 5vw;
+        transform: translateY(50%)
+    }
+
+    .rectangle {
+        height: 70%;
+        width: 15%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .floor-box {
+        margin: 0% 30px 0% -30px;
+        height: 50%;
+        width: auto;
+        margin-bottom: 0%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /* background: #f1f2c2; */
+    }
+
+
+}
+
 
 /* For Tablets */
 @media only screen and (min-height: 750px) and (max-width: 1480px) {
@@ -541,7 +674,6 @@ header {
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-around;
-        background: #f1f2c2;
     }
 
 }
