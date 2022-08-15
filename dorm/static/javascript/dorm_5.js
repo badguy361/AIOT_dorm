@@ -35,7 +35,7 @@ async function myAsyncFunction() {
 
 
         console.log("start to fetch data");
-        fetch('http://127.0.0.1:8000/dorm/getJsondata5')
+        fetch('https://iot-dorm.ideasky.app/dorm/getJsondata5')
             .then((response) => {
                 console.log("response.json()", response);
                 return response.json();
@@ -134,8 +134,10 @@ async function myAsyncFunction() {
                     f5dryerMachine_1.style.animation = 'dash 1.4s linear infinite';
                     f5dryerMachine_box1.style.background = 'yellow';
                 } else {
+		    f5dryerMachine_1.style.animationPlayState = "paused";
+		    f5dryerMachine_1.style.opacity = 0.1;
                     f5dryerMachine_box1.style.background = '#609755';
-                }
+		}
 
                 if (parseInt(f5wc_1_usage) > 0) {
                     f5wc_1.style.opacity = 0.8;

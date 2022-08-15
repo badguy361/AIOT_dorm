@@ -33,7 +33,7 @@ async function myAsyncFunction() {
 
 
         console.log("start to fetch data");
-        fetch('http://127.0.0.1:8000/dorm/getJsondata1')
+        fetch('https://iot-dorm.ideasky.app/dorm/getJsondata1')
             .then((response) => {
                 console.log("response.json()", response);
                 return response.json();
@@ -125,6 +125,8 @@ async function myAsyncFunction() {
                     f1dryerMachine_1.style.animation = 'dash 1.4s linear infinite';
                     f1dryerMachine_box1.style.background = 'yellow';
                 } else {
+	            f1dryerMachine_1.style.animationPlayState = "paused";
+		    f1dryerMachine_1.style.opacity = 0.1;
                     f1dryerMachine_box1.style.background = '#609755';
                 }
 
