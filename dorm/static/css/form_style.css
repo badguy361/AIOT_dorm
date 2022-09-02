@@ -1,123 +1,193 @@
-body {
-    background-color: #FAF4F1
-}
-
-.site-header {
-    width: 100%;
-    height: 70px;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    background-color: #F7D1AE;
-    display: flex;
-    justify-content: space-between;
-
-}
-
 html,
 body {
-    height: 100%;
-
+    height:auto;
     margin: 0;
 }
 
-#logo {
-    width: 10%;
-}
 
-header {
-    width: 100%;
-    height: 75px;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.text {
-    margin: 0;
-    /* 取消外距，設定為0*/
-    padding: 14px;
-    /* 內部距離，設定為4px*/
-    text-align: center;
-    /* 文字置中*/
-    overflow: hidden;
-    list-style-type: none;
-    /* 取消前面的小黑點*/
-    display: inline;
-    /* 成一行排列*/
+  
+  #l1{
+    font-weight: bold;
+  }
+  .nav-item a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  .nav-item a {
+      color: #fff;
+      text-decoration: none;
+  }
+  .nav-item{
+      /* 導覽列整體設定*/
+      margin: 0;
+      /* 取消外距，設定為0*/
+      padding: 14px;
+      /* 內部距離，設定為4px*/
+  /*     text-align: center; */
+      /* 文字置中*/
+      overflow: hidden;
+      list-style-type: none;
+      /* 取消前面的小黑點*/
+      display: inline;
+      /* 成一行排列*/
+      font-size: 30px;
+      margin-top:2%;
+  } 
+  h5{
     font-size: 30px;
-}
+  }.s1 .bg {
+    background-image: url("https://i.imgur.com/G4Fa14Y.png");
+  }
+    
 
-.text a {
-    color: #fff;
+  
+  #l1{
+    font-weight: bold;
+  }
+  .nav-item a:hover {
+    color: #000;
     text-decoration: none;
-}
-
-.text a:hover {
-    /* 超連結滑鼠滑過設定*/
-    color: #000000;
-    /* 文字顏色設定*/
-    text-decoration: none;
-    /* 文字有底線*/
-}
-
-.navigation li {
-    /* 導覽列整體設定*/
-    margin: 0;
-    /* 取消外距，設定為0*/
-    padding: 14px;
-    /* 內部距離，設定為4px*/
-    text-align: center;
-    /* 文字置中*/
-    overflow: hidden;
-    list-style-type: none;
-    /* 取消前面的小黑點*/
-    display: inline;
-    /* 成一行排列*/
+  }
+  .nav-item a {
+      color: #fff;
+      text-decoration: none;
+  }
+  .nav-item{
+      /* 導覽列整體設定*/
+      margin: 0;
+      /* 取消外距，設定為0*/
+      padding: 14px;
+      /* 內部距離，設定為4px*/
+  /*     text-align: center; */
+      /* 文字置中*/
+      overflow: hidden;
+      list-style-type: none;
+      /* 取消前面的小黑點*/
+      display: inline;
+      /* 成一行排列*/
+      font-size: 30px;
+      margin-top:2%;
+  } 
+  h5{
     font-size: 30px;
+  }
+.shadowbox {
+  width: 90%;
+  margin-top:5%;
+  margin-left:5%;
+
 }
 
-.navigation ul li a:hover {
-    /* 超連結滑鼠滑過設定*/
-    color: #000000;
-    /* 文字顏色設定*/
-    text-decoration: none;
-    /* 文字有底線*/
+#school{
+  width:100%;  
 }
 
-.navigation ul li a {
-    /* 超連結設定*/
-    color: #ffffff;
-    /* 文字顏色設定*/
-    text-decoration: none;
-    /* 文字無底線 */
-}
-
-#back-purple {
-    width: 45%;
-    height: 90%;
-    background-color: #ffffff;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: -2%;
-    margin-bottom: 1%;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-top: 3%;
-    z-index: 1;
-    box-shadow: 10px 12px 7px rgba(0, 0, 0, 0.2)
+#form{
+  width:100%; 
+  height:1100; 
 }
 
 
-
-#school {
-    margin-top: 6.5%;
-    margin-left: 27.5%;
-    width: 45%;
-    z-index: 2;
+@media (min-width: 765px) {
+ .shadowbox {
+  width: 635px;
+  margin:5% auto auto auto;
+ }
+} 
+ @media (max-width: 577px){
+#form{
+  width:100%; 
+  height:1110; 
 }
+}
+ @media (max-width: 560px){
+#form{
+  width:100%; 
+  height:1140; 
+}
+}
+ @media (max-width: 475px){
+#form{
+  width:100%; 
+  height:1160; 
+}
+}
+ @media (max-width: 474px){
+#form{
+  width:100%; 
+  height:1140; 
+}
+}
+
+
+ @media (max-width: 470px){
+#form{
+  width:100%; 
+  height:1140; 
+}
+}
+
+ @media (max-width: 468px){
+#form{
+  width:100%; 
+  height:1160; 
+}
+}
+
+ @media (max-width: 466px){
+#form{
+  width:100%; 
+  height:1180; 
+}
+}
+ @media (max-width: 433px){
+#form{
+  width:100%; 
+  height:1200; 
+}
+}
+
+ @media (max-width: 362px){
+#form{
+  width:100%; 
+  height:1220; 
+}
+}
+
+
+ @media (max-width: 289px){
+#form{
+  width:100%; 
+  height:1260; 
+}
+}
+
+
+ @media (max-width: 280px){
+#form{
+  width:100%; 
+  height:1260; 
+}
+}
+
+ @media (max-width: 275px){
+#form{
+  width:100%; 
+  height:1240; 
+}
+}
+
+ @media (max-width: 271px){
+#form{
+  width:100%; 
+  height:1270; 
+}
+}
+
+
+ @media (max-width: 259px){
+#form{
+  width:100%; 
+  height:1300; 
+}
+} 
