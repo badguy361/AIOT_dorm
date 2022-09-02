@@ -1,38 +1,66 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-	{% load static %}
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>雙欄式網頁版型</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-	<link href="{% static '/css/form_style.css' %}" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="form_style.css">
+  {% load static %}	
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+  <link href="{% static '/css/form_style.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="form_style.css">
 </head>
 
-<body background="https://i.imgur.com/G4Fa14Y.png">
-	<header>
-		<img src='http://in.ncu.edu.tw/~ncu7221/OSDS/images/logo.png' id='logo' alt="My test image">
-		<div class='text'>
-			<a href="/dorm/Home" target="_self">宿舍通</a>
-		</div>
-		<nav class="navigation">
-			<ul>
-				<li><a href="" target="_self">產品介紹</a></li>
-				<li><a href="/dorm/feedbacks" target="_self">回饋表單</a></li>
-				<li><a href="/dorm/connect">聯絡資訊</a></li>
-			</ul>
-		</nav>
-	</header>
-<img src='https://i.imgur.com/a1SDK6P.png' id='school' alt="My test image">
-<div id="back-purple">
+<body>
 
-<iframe id='form 'src="https://docs.google.com/forms/d/e/1FAIpQLSeYu9A7C1xxBPW36jEUhEHvRkasUkVJYbKRyeveidFfpiHw5Q/viewform?embedded=true" width= 100% height=100% frameborder="0" marginheight="0" marginwidth="0" scrollbar-width: none >載入中…</iframe>
-</div>
-
- <script src="{% static '/javascript/dormitory.js' %}"></script>
+  <body background="https://i.imgur.com/G4Fa14Y.png">
+    <div class="s1">
+      <nav class="navbar navbar-expand-lg navbar-dark bg">
+        <a class="navbar-brand" href="#"><img src="http://in.ncu.edu.tw/~ncu7221/OSDS/images/logo.png" width=""
+            height="35" class="d-inline-block  align-top" alt="">
+          <span id=l1 class="h2 mx-1">宿舍通</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-</body>
+        <div class=" collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="domitory.html">
+                <h5>首頁</h5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <h5>產品介紹</h5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="form.html">
+                <h5>回饋表單</h5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/dorm/connect">
+                <h5>聯絡資訊</h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  <div class='shadowbox'>
+    <img src='https://i.imgur.com/a1SDK6P.png' id='school' alt="My test image">
+  </div>
 
-</html>
+  <iframe id='form'
+    src="https://docs.google.com/forms/d/e/1FAIpQLSeYu9A7C1xxBPW36jEUhEHvRkasUkVJYbKRyeveidFfpiHw5Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" scrolling='no'
+   >載入中…</iframe>
+
+  </body>
+</html>	
