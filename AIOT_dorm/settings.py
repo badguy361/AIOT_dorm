@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'tzkgpqv7e$jyhywb2v#qsw7yj_0vdy&*&bp7yd95d@^5qg-7sv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["iot-dorm.ideasky.app","52.187.66.140","114.32.154.196","localhost","0.0.0.0:80","127.0.0.1"]
 

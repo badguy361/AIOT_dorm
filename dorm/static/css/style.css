@@ -357,7 +357,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 950px) and (min-height: 500px) {
     /* For tablets: */
 
     .section {
