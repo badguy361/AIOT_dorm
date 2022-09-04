@@ -7,42 +7,7 @@ body {
 
 .s1 .bg {
     background-image: url("https://i.imgur.com/G4Fa14Y.png");
-  }
-    
-  #logo{
-      width:10%;
-  }
-  
-  #l1{
-    font-weight: bold;
-  }
-  .nav-item a:hover {
-    color: #000;
-    text-decoration: none;
-  }
-  .nav-item a {
-      color: #fff;
-      text-decoration: none;
-  }
-  .nav-item{
-      /* 導覽列整體設定*/
-      margin: 0;
-      /* 取消外距，設定為0*/
-      padding: 14px;
-      /* 內部距離，設定為4px*/
-  /*     text-align: center; */
-      /* 文字置中*/
-      overflow: hidden;
-      list-style-type: none;
-      /* 取消前面的小黑點*/
-      display: inline;
-      /* 成一行排列*/
-      font-size: 30px;
-      margin-top:2%;
-  } 
-  h5{
-    font-size: 30px;
-  }
+}
 
 
 .back-purple {
@@ -64,7 +29,8 @@ body {
     height: 90%;
     background-color: white;
     margin: 3% 0 5% 5%;
-    border-radius: 30px;
+    border-bottom-left-radius:  30px;
+    border-top-left-radius:  30px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -75,12 +41,13 @@ body {
     font-family: "微軟正黑體";
     width: 80%;
     height: 5%;
-    font-size: 24px;
+    font-size: 100%;
     color: white;
     text-align: center;
     background-color: #5955b3;
     margin-right: 10%;
     margin-left: 10%;
+    padding-top: 1.5%;
     border-radius: 30px;
     margin-top: 2%;
 }
@@ -188,11 +155,6 @@ body {
     stroke-width: 0.5;
 }
 
-.wc_ {
-    transform: rotate(90deg);
-}
-
-
 /* 烘衣機的動畫設定 */
 
 @keyframes dash {
@@ -235,7 +197,7 @@ body {
     height: 12%;
     background-color: #A499AC;
     border-radius: 30px;
-    font-size: 24px;
+    font-size: 100%;
     color: white;
     font-family: "微軟正黑體";
     display: flex;
@@ -243,6 +205,7 @@ body {
 }
 
 .facility-name {
+    padding-top: 1%;
     width: 30%;
     text-align: center;
 }
@@ -257,7 +220,7 @@ body {
 
 .box {
     border: solid;
-    height: 23px;
+    height: 80%;
     width: 23px;
     border-color: #5D626F;
     background-color: #0B9A48;
@@ -286,7 +249,7 @@ body {
     /*随便设置个颜色区分可滚动区域和其他区域*/
     background-color: white;
     /* 设置在竖直方向上可滚动 */
-    width: 95%;
+    width: 100%;
     /* top: -15px; */
     margin-left: 0%;
     margin-top: 0%;
@@ -364,7 +327,7 @@ body {
     }
 }
 
-@media only screen and (min-height: 1000px) and (max-width: 970px) {
+@media only screen and (min-height: 1000px) and (max-width: 1024px) {
     #imag-2 {
         display: none;
     }
@@ -394,7 +357,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 950px) {
     /* For tablets: */
 
     .section {
@@ -468,9 +431,11 @@ body {
 
     .content p {
         font-size: 5vw;
-        transform: translateY(50%)
     }
 
+    .content h1{
+        width: 85%;
+    }
     .rectangle {
         height: 70%;
         width: 15%;
@@ -493,145 +458,50 @@ body {
         /* background: #f1f2c2; */
     }
 
+    .F{
+        padding-top: 1%;
+    }
 
+    .usage{
+        font-size: 65%;
+    }
+    
 }
 
 
-/* For Tablets */
-@media only screen and (min-height: 750px) and (max-width: 1480px) {
-    #imag-4 {
-        display: none;
-    }
-}
-
-@media only screen and (min-height: 750px) and (max-width: 1000px) {
-    #imag-3 {
-        display: none;
-    }
-}
-
-/* For mobile phones: */
-@media only screen and (max-height: 600px) {
-    #imag-4 {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-
-    /* For tablets: */
-    .col-p-1 {
-        width: 8.33%;
-    }
-
-    .col-p-2 {
-        width: 16.66%;
-    }
-
-    .col-p-3 {
-        width: 25%;
-    }
-
-    .col-p-4 {
-        width: 33.33%;
-    }
-
-    .col-p-5 {
-        width: 41.66%;
-    }
-
-    .col-p-6 {
-        width: 50%;
-    }
-
-    .col-p-7 {
-        width: 58.33%;
-    }
-
-    .col-p-8 {
-        width: 66.66%;
-    }
-
-    .col-p-9 {
-        width: 75%;
-    }
-
-    .col-p-10 {
-        width: 83.33%;
-    }
-
-    .col-p-11 {
-        width: 91.66%;
-    }
-
-    .col-p-12 {
-        width: 100%;
-    }
-
-    .column-p-box {
-        flex-direction: column;
-    }
-
-    .section {
-        width: auto;
-        height: 18%;
-        margin: 2% 3% 0% 3%;
-        border-radius: 30px;
-        flex-direction: row;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-
-    .back-purple {
-        margin-top: 3.75%;
-    }
-
-    .content {
-        width: auto;
-        margin: 0% 0% 0% 0%;
-        border-radius: 30px;
-        background: #f2f2f2;
-    }
-
-    .floor-plan {
-        width: auto;
-        /* min-width: 320px; */
-        height: 77%;
-        margin: 2% 5% 6% 5%;
-        border-radius: 30px;
-    }
-
-    .rectangle img {
-        display: none;
-    }
-
+@media only screen and (max-width: 650px) {  
     .content p {
-        font-size: 5vw;
-        transform: translateY(50%)
+        transform: translateY(50%);
     }
+}
 
-    .rectangle {
-        height: 70%;
-        width: 15%;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .floor-box {
-        margin: 0% 30px 0% -30px;
-        height: 50%;
-        width: auto;
-        margin-bottom: 0%;
-
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
+#l1{
+  font-weight: bold;
+}
+.nav-item a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-item{
+    /* 導覽列整體設定*/
+    margin: 0;
+    /* 取消外距，設定為0*/
+    padding: 14px;
+    /* 內部距離，設定為4px*/
+/*     text-align: center; */
+    /* 文字置中*/
+    overflow: hidden;
+    list-style-type: none;
+    /* 取消前面的小黑點*/
+    display: inline;
+    /* 成一行排列*/
+    font-size: 30px;
+    margin-top:2%;
+} 
+h5{
+  font-size: 30px;
 }

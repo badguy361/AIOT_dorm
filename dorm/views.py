@@ -107,6 +107,10 @@ class FacilitiesViewSet4(viewsets.ModelViewSet):
         template_name = 'form.html'
         return render(request, template_name)
 
+    def product(request):
+        template_name = 'product.html'
+        return render(request, template_name)
+
     def connect(request):
         template_name = 'info.html'
         return render(request, template_name)
