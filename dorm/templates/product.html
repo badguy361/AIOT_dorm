@@ -1,98 +1,120 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   {% load static %}
   <title>宿舍通</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="https://th.bing.com/th/id/R.a50e1ed7786b12095deb6eebcfb557a8?rik=G2JGKYGbtI6k6g&riu=http%3a%2f%2fwww.cc.ncu.edu.tw%2f%7encu7221%2fOSDS%2fdist%2fimages%2flogo.png&ehk=41XmvbY%2fwqI0%2fzQYupcXmXl%2fgLhMVdI%2fs6s3ixw28Rs%3d&risl=&pid=ImgRaw&r=0" type="image/x-icon" /> 
+  <link rel="icon"
+    href="https://th.bing.com/th/id/R.a50e1ed7786b12095deb6eebcfb557a8?rik=G2JGKYGbtI6k6g&riu=http%3a%2f%2fwww.cc.ncu.edu.tw%2f%7encu7221%2fOSDS%2fdist%2fimages%2flogo.png&ehk=41XmvbY%2fwqI0%2fzQYupcXmXl%2fgLhMVdI%2fs6s3ixw28Rs%3d&risl=&pid=ImgRaw&r=0"
+    type="image/x-icon" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
   </script>
   <link href="{% static '/css/product_style.css' %}" rel="stylesheet" type="text/css" />
-<link href="product_style.css" rel="stylesheet">  
+  <link href="product_style.css" rel="stylesheet">
 </head>
 
-<body  background="https://i.imgur.com/G4Fa14Y.png">
-<div class="s1">
-<nav class="navbar navbar-expand-lg navbar-dark bg">
-  <a class="navbar-brand" href="/dorm/Home"><img src="http://in.ncu.edu.tw/~ncu7221/OSDS/images/logo.png" width="" height="45" class="d-inline-block  align-top" alt="">
-  <span class="h2 mx-1">宿舍通</span></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  
+<body background="https://i.imgur.com/G4Fa14Y.png">
+  <div class="s1">
+    <nav class="navbar navbar-expand-lg navbar-dark bg">
+      <a class="navbar-brand" href="/dorm/Home"><img src="http://in.ncu.edu.tw/~ncu7221/OSDS/images/logo.png" width=""
+          height="45" class="d-inline-block  align-top" alt="">
+        <span class="h2 mx-1">宿舍通</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class=" collapse navbar-collapse "  id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a  href="/dorm/Home"><h5>首頁</h5> </a>
-      </li>
-      <li class="nav-item">
-        <a  href="/dorm/product"><h5>產品介紹</h5> </a>
-      </li>
-      <li class="nav-item">
-        <a  href="/dorm/feedbacks" ><h5>問卷</h5> </a>
-      </li> 
-      <li class="nav-item">
-        <a  href="/dorm/connect" ><h5>聯絡資訊</h5> </a>
-      </li> 
-    </ul>
-  </div>
-</nav>
-</div>
-<div class='s2'>
-  <div class="jumbotron jumbotron-fluid bg text-white text-center " > 
-    <h1 class="display-2  "> 宿舍通 </h1>
-  
-    <p class="lead ">
-    是不是常常在宿舍裡遇到需要排隊的困擾 讓宿舍通改善你我的生活 
-    </p>
-  </div>
-</div>   
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-lg-3 "> 
-      <div class="card" >
-       <img src="https://cdn.pixabay.com/photo/2020/06/26/17/16/daisies-5343423_1280.jpg" class="card-img-top " alt="...">
-        <div class="card-body">
-         <h5 class="card-title">洗衣機</h5>
-         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div> 
-    <div class="col-md-6 col-lg-3  "> 
-      <div class="card" >
-       <img src="https://cdn.pixabay.com/photo/2020/04/20/09/42/seagulls-5067489_1280.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-         <h5 class="card-title">烘衣機</h5>
-         <p class="card-text">Some quick example text to build on the            card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-md-6 col-lg-3  "> 
-      <div class="card" >
-       <img src="https://cdn.pixabay.com/photo/2020/04/20/09/42/seagulls-5067489_1280.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-         <h5 class="card-title">烘衣機</h5>
-         <p class="card-text">Some quick example text to build on the            card title and make up the bulk of the card's content.</p>
+      <div class=" collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="/dorm/Home">
+              <h5>首頁</h5>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/dorm/product">
+              <h5>產品介紹</h5>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/dorm/feedbacks">
+              <h5>回饋表單</h5>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/dorm/connect">
+              <h5>聯絡資訊</h5>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class='s2'>
+    <div class="jumbotron jumbotron-fluid bg text-white text-center ">
+      <h1 class="display-2  "> 宿舍通 </h1>
+
+      <p class="lead ">
+        是不是常常在宿舍裡遇到需要排隊的困擾 讓宿舍通改善你我的生活
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 ">
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2020/06/26/17/16/daisies-5343423_1280.jpg" class="card-img-top "
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">洗衣機</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div class="col-md-6 col-lg-3  "> 
-      <div class="card">
-       <img src="https://cdn.pixabay.com/photo/2020/09/07/16/32/fishing-5552310_1280.jpg" class="card-img-top card-fluid" alt="...">
-        <div class="card-body">
-         <h5 class="card-title">浴室</h5>
-         <p class="card-text">Some quick example text to build on the card title   and make up the bulk of the card's content.</p>
+      <div class="col-md-6 col-lg-3  ">
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2020/04/20/09/42/seagulls-5067489_1280.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">烘衣機</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3  ">
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2020/04/20/09/42/seagulls-5067489_1280.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">烘衣機</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3  ">
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2020/09/07/16/32/fishing-5552310_1280.jpg"
+            class="card-img-top card-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">浴室</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </body>
+
 </html>
