@@ -54,7 +54,26 @@ header {
     /* 文字有底線*/
 }
 
-.navigation li {
+/*   -----------------------------   Menu    ---------------------------------- */
+.Toggle-menu {
+	
+}
+.Toggle-menu i {
+	
+}
+
+
+.Menu-content:hover {
+    /* 超連結滑鼠滑過設定*/
+    color: #000000;
+    /* 文字顏色設定*/
+    text-decoration: none;
+    /* 文字有底線*/
+}
+
+
+
+.Menu-content {
     /* 導覽列整體設定*/
     margin: 0;
     /* 取消外距，設定為0*/
@@ -67,18 +86,7 @@ header {
     /* 取消前面的小黑點*/
     display: inline;
     /* 成一行排列*/
-    font-size: 30px;
-}
-
-.navigation ul li a:hover {
-    /* 超連結滑鼠滑過設定*/
-    color: #000000;
-    /* 文字顏色設定*/
-    text-decoration: none;
-    /* 文字有底線*/
-}
-
-.navigation ul li a {
+    font-size: 2.5vw;
     /* 超連結設定*/
     color: #ffffff;
     /* 文字顏色設定*/
@@ -101,10 +109,10 @@ header {
 }
 /*   ----------------------------   section    --------------------------------- */
 .section {
-    width: 41%;
+    width: 40%;
     height: 90%;
     background-color: white;
-    margin: 3% 0 5% 5%;
+    margin: 3% 0% 0% 5%;
     border-bottom-left-radius:  30px;
     border-top-left-radius:  30px;
     display: flex;
@@ -117,14 +125,14 @@ header {
     font-family: "微軟正黑體";
     width: 80%;
     height: 5%;
-    font-size: 24px;
+    font-size: 100%;
     color: white;
-    text-align: center;
     background-color: #5955b3;
     margin-right: 10%;
     margin-left: 10%;
     border-radius: 30px;
-    margin-top: 2%;
+    top: 2%;
+    text-align: center;
 }
 /*   ---------------------------   floor-plan    ------------------------------- */
 #floor-plan-1 {
@@ -132,7 +140,7 @@ header {
     /* min-width: 320px; */
     height: 90%;
     background-color: #EDE6F8;
-    margin: 3% 5% 5% 0;
+    margin: 3% 0% 5% 0;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -280,17 +288,23 @@ header {
     height: 12%;
     background-color: #A499AC;
     border-radius: 30px;
-    font-size: 24px;
+    font-size: 100%;
     color: white;
     font-family: "微軟正黑體";
     display: flex;
     justify-content: flex-start;
+    transform: translateY(50%);
+}
+
+.usage b {
+    font-size: 100%;
 }
 
 .facility-name {
     width: 30%;
     text-align: center;
 }
+
 
 .all-box {
     width: 70%;
@@ -302,8 +316,9 @@ header {
 
 .box {
     border: solid;
-    height: 23px;
-    width: 23px;
+    height: 70%;
+    width: 95%;
+    margin-right:3%;
     border-color: #5D626F;
     background-color: #0B9A48;
     border-width: 2px;
@@ -353,15 +368,15 @@ header {
 .content h1 {
     font-family: "微軟正黑體";
     width: 80%;
-    height: 60%;
-    font-size: 24px;
+    height: 30%;
+    font-size: 3.5vh;
     color: #5955b3;
     text-align: center;
     background-color: #EDE6F8;
-    margin-right: 5%;
-    margin-left: 7.5%;
     border-radius: 30px;
     margin-top: 2%;
+    margin-left: 10%;
+
 }
 
 .content {
@@ -371,7 +386,7 @@ header {
     /*随便设置个颜色区分可滚动区域和其他区域*/
     background-color: white;
     /* 设置在竖直方向上可滚动 */
-    width: 95%;
+    width: 100%;
     /* top: -15px; */
     margin-left: 0%;
     margin-top: 0%;
@@ -382,7 +397,6 @@ header {
     flex-wrap: nowrap;
     /* justify-content: space-between; */
     /*overflow:hidden样式可以不写，因为scroll会自动隐藏超出content高度的部分*/
-
 }
 
 
@@ -410,19 +424,19 @@ header {
 }
 .rectangle img {
     position: relative;
-    margin-left: auto;
-    margin-right: 6%;
+
+    margin-right: auto;
     top: 20%;
     height: 75%;
     width: auto;
 }
 .rectangle {
     position: relative;
-    margin-top: 3%;
-    max-width: 90%;
+    margin-bottom: 3%;
+    max-width: 100%;
     height: 15%;
     background: #f2f2f2;
-    margin-left: 3%;
+    margin-left: 13%;
     border-radius: 30px;
     box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -437,6 +451,8 @@ header {
 } */
 
 /* For dest-book: */
+@media (max-width:992px) and (min-width:601px){}
+@media (max-width:992px) and (min-width:601px){}
 @media only screen and (min-height: 1000px) and (max-width: 1960px) {
     #imag-4 {
         display: none;
@@ -449,7 +465,7 @@ header {
     }
 }
 
-@media only screen and (min-height: 1000px) and (max-width: 970px) {
+@media only screen and (min-height: 1000px) and (max-width: 1024px) {
     #imag-2 {
         display: none;
     }
@@ -471,6 +487,11 @@ header {
         display: none;
     }
 }
+@media only screen and (max-width: 720px) {
+	.rectangle {
+		margin-left: 20%;
+	}
+}
 
 /* For mobile phones: */
 @media only screen and (max-height: 600px) {
@@ -481,7 +502,7 @@ header {
 
 @media only screen and (max-width: 650px) {
     /* For tablets: */
-
+    .hide-small {display: none;}
     .section {
         width: auto;
         height: 18%;
@@ -550,20 +571,29 @@ header {
 
     .content p {
         font-size: 5vw;
-        transform: translateY(50%)
+        transform: translateY(50%);
+    }
+    .content h1 {
+	  font-size: 6vw;
+    	  width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
     }
 
     .rectangle {
         height: 70%;
         width: 15%;
+        margin-left: 3%;
+        border-radius: 30px;
         flex-direction: column;
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-around;
+	  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
     }
 
     .floor-box {
-        margin: 0% 30px 0% -30px;
+        margin: 0% 30px 10% 30px;
         height: 50%;
         width: auto;
         margin-bottom: 0%;
@@ -572,7 +602,7 @@ header {
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-around;
-        background: #f1f2c2;
+        /* background: #f1f2c2; */
     }
 
 
