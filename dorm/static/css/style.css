@@ -29,8 +29,8 @@ body {
     height: 90%;
     background-color: white;
     margin: 3% 0 5% 5%;
-    border-bottom-left-radius:  30px;
-    border-top-left-radius:  30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -357,7 +357,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 950px) and (min-height: 500px) {
     /* For tablets: */
 
     .section {
@@ -433,9 +433,10 @@ body {
         font-size: 5vw;
     }
 
-    .content h1{
+    .content h1 {
         width: 85%;
     }
+
     .rectangle {
         height: 70%;
         width: 15%;
@@ -458,41 +459,44 @@ body {
         /* background: #f1f2c2; */
     }
 
-    .F{
+    .F {
         padding-top: 1%;
     }
 
-    .usage{
+    .usage {
         font-size: 65%;
     }
-    
+
 }
 
 
-@media only screen and (max-width: 650px) {  
+@media only screen and (max-width: 650px) {
     .content p {
         transform: translateY(50%);
     }
 }
 
-#l1{
-  font-weight: bold;
+#l1 {
+    font-weight: bold;
 }
+
 .nav-item a:hover {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
+
 .nav-item a {
     color: #fff;
     text-decoration: none;
 }
-.nav-item{
+
+.nav-item {
     /* 導覽列整體設定*/
     margin: 0;
     /* 取消外距，設定為0*/
     padding: 14px;
     /* 內部距離，設定為4px*/
-/*     text-align: center; */
+    /*     text-align: center; */
     /* 文字置中*/
     overflow: hidden;
     list-style-type: none;
@@ -500,8 +504,9 @@ body {
     display: inline;
     /* 成一行排列*/
     font-size: 30px;
-    margin-top:2%;
-} 
-h5{
-  font-size: 30px;
+    margin-top: 2%;
+}
+
+h5 {
+    font-size: 30px;
 }
