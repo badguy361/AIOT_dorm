@@ -1,19 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-from requests import Response
-from dorm import models
 from dorm.models import facilities_firstfloor,facilities_secondfloor,\
         facilities_thirdfloor,facilities_fourthfloor,facilities_fifthfloor
 from dorm.serializers import FacilitiesSerializer
 from rest_framework import viewsets
 from rest_framework.decorators import api_view
 from django.views.decorators.csrf import csrf_exempt
-from django.views.generic import ListView
-from django.views import View
-from django.http import HttpResponseRedirect
-import json
 from django.core import serializers
-    
+from django.contrib.sessions.models import Session
+import datetime
+from django.utils import timezone
+import datetime
+
 # @api_view(['GET'])
 # def getData(request):
 #     data = facilities.objects.all()
@@ -100,6 +98,9 @@ class FacilitiesViewSet4(viewsets.ModelViewSet):
         return HttpResponse(queryset)
 
     def Home(request):
+        # print(datetime.datetime.now())
+        request.session['number']=str(datetime.datetime.now())
+        request.session.set_expiry(60*15)
         template_name = 'dormitory.html'
         return render(request, template_name)
 
@@ -114,6 +115,11 @@ class FacilitiesViewSet4(viewsets.ModelViewSet):
     def connect(request):
         template_name = 'info.html'
         return render(request, template_name)
+    
+    def browser(request):
+        online_sessions = Session.objects.filter(expire_date__gte=datetime.datetime.now(tz=timezone.utc)).count()
+        return HttpResponse(online_sessions)
+
 
 class FacilitiesViewSet5(viewsets.ModelViewSet):
     # model = facilities

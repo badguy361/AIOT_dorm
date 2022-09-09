@@ -35,6 +35,7 @@ urlpatterns = [
     path('feedbacks/', views.FacilitiesViewSet4.feedbacks, name='dorm'),
     path('product/', views.FacilitiesViewSet4.product, name='dorm'),
     path('connect/', views.FacilitiesViewSet4.connect, name='dorm'),
+    path('browser/', views.FacilitiesViewSet4.browser, name='dorm'),
     
     path('info5/', views.FacilitiesViewSet5.get, name='dorm'),
     path('getJsondata5/', views.FacilitiesViewSet5.getJsondata, name='Jsondata'),
