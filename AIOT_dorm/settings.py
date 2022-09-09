@@ -25,7 +25,7 @@ SECRET_KEY = 'tzkgpqv7e$jyhywb2v#qsw7yj_0vdy&*&bp7yd95d@^5qg-7sv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
+SESSION_COOKIE_AGE = 60 * 15
 ALLOWED_HOSTS = ["iot-dorm.ideasky.app","52.187.66.140","114.32.154.196","localhost","0.0.0.0:80","127.0.0.1"]
 
 
