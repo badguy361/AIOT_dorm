@@ -279,8 +279,9 @@ body {
     height: 90%;
     width: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: nowrap;
+    justify-content: flex-end;
     /*   background: #f1f2c2; */
 }
 

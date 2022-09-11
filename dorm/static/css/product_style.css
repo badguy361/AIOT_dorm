@@ -50,3 +50,9 @@
   font-weight:bold;
   font-size:30px;
 }
+
+.card{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
