@@ -77,33 +77,47 @@
           <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"
             onload="this.onload=function(){window.location='https://iot-dorm.ideasky.app/dorm/connect/'}"></iframe>
           <form
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSehWQqqqQ7lL9NbjdYnKBEt2mJH8TxQUC3xtEHU6pqnHe-1AA/formResponse"
+           action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSehWQqqqQ7lL9NbjdYnKBEt2mJH8TxQUC3xtEHU6pqnHe-1AA/formResponse"
             method="post" target="hidden_iframe">
             <div class="contact-form ">
               <div class="form-group">
-                <label class="control-label col-sm-4  " for="fname">名字:</label>
+                <label class="control-label col-sm-4  " for="place">回報地點:</label>
                 <div class="col-sm-12">
-                  <input type="text" class="form-control" id="name" placeholder="請輸入名字" name="entry.465729818">
+                  <select class="form-select" style="width:100%;" style="margin-down=50%;"
+                    aria-label="Default select example" name='entry.931072025'>
+                    <option selected>請選擇樓層</option>
+                    <option value="1F">1F</option>
+                    <option value="2F">2F</option>
+                    <option value="3F">3F</option>
+                    <option value="4F">4F</option>
+                    <option value="5F">5F</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-4" for="type">回報類別:</label>
+                  <div class="col-sm-12">
+                    <select class="form-select" style="width:100%;" style="margin-down=5%;"
+                      aria-label="Default select example" name='entry.1808097327'>
+                      <option selected>請選擇類別</option>
+                      <option value="廁所">廁所</option>
+                      <option value="浴室">浴室</option>
+                      <option value="洗衣機">洗衣機</option>
+
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-3" for="comment">內容:</label>
+                  <div class="col-sm-12">
+                    <textarea class="form-control" rows="5" id="subject" name="entry.1018556506"> </textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="email">Email:</label>
-                <div class="col-sm-12">
-                  <input type="email" class="form-control" id="email" placeholder="請輸入電子郵件" name="entry.1808097327">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="comment">內容:</label>
-                <div class="col-sm-12">
-                  <textarea class="form-control" rows="5" id="subject" name="entry.1018556506"> </textarea>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-default">Submit</button>
-                </div>
-              </div>
-            </div>
           </form>
         </div>
 
