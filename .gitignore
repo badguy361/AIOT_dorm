@@ -4,3 +4,4 @@
 /dorm_pi/.local/
 /dorm_pi/.vscode-server/
 /dorm_pi/.__pycache__/
+db.sqlite3
