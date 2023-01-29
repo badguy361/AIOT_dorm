@@ -1,4 +1,5 @@
 # AIOT_dorm
+https://iot-dorm.ideasky.app/ 
 
 利用Django作為後端框架，以及Azure雲端虛擬主機，建立一套伺服器系統，透過網頁視覺化的方式即時呈現當前宿舍之公用浴室、廁所、洗衣機、烘衣機使用情形。
 ![image](https://user-images.githubusercontent.com/43988698/215307919-6868e861-c04d-4b5a-833d-b24169699bfc.png)
