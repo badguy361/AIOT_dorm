@@ -33,6 +33,7 @@ Django為一種框架，以此可連接後端資料庫與前端網頁設計頁�
 
 圖五 樹梅派用以傳遞資訊
 
-
+# 聯絡我
+如果有任何問題歡迎聯絡我 e-mail : t1616joy@yahoo.com.tw / t1616joey1@gmail.com
 
  
